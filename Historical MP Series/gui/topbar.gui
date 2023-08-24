@@ -744,6 +744,8 @@ types topbar_components
 									}
 								}
 							}
+							
+							
 						}
 						
 						#shows only on hover
