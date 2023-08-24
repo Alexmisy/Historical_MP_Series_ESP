@@ -7,7 +7,7 @@
 				THIS = c:CHI
 			}
 			AND = {
-				exists = c:TPG
+				exists = TPG
 				THIS = c:TPG
 			}
 		}

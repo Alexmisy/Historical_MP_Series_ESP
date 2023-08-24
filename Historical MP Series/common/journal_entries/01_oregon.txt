@@ -139,5 +139,5 @@ je_conquer_oregon = {
 
 	weight = 100
 
-	can_revolution_inherit = yes
+	transferable = no
 }

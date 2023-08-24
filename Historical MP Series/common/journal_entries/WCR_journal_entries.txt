@@ -65,10 +65,7 @@
     invalid = {
         hidden_trigger = {
             ROOT = {
-				OR = {
-					WCR_is_westernized_trigger = yes
-					has_variable = abandoned_westernisation
-				}
+                WCR_is_westernized_trigger = yes
             }
         }
     }
@@ -98,12 +95,6 @@
                     has_modifier = WCR_ig_westernization_4_modifier
                 }
                 remove_modifier = WCR_ig_westernization_4_modifier
-            }
-			if = {
-                limit = {
-                    has_variable = abandoned_westernisation
-                }
-                remove_variable = abandoned_westernisation
             }
         }
     }

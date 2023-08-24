@@ -124,7 +124,7 @@ abolishment_of_serfdom = {
 		}
 	}
 	
-	can_revolution_inherit = yes
+	transferable = no
 
 	weight = 5000
 }
@@ -155,7 +155,7 @@ era_of_peace = {
 		}
 	}
 
-	can_revolution_inherit = yes
+	transferable = no
 
 	weight = 5000
 }
@@ -187,7 +187,7 @@ loris_melikovs_constitution = {
 		}
 	}
 
-	can_revolution_inherit = yes
+	transferable = no
 
 	weight = 5000
 }
@@ -231,7 +231,7 @@ je_bulgaria_liberated = {
 		}
 	}
 
-	can_revolution_inherit = yes
+	transferable = no
 
 	weight = 5000
 }
@@ -274,7 +274,7 @@ je_serbia_liberated = {
 		}
 	}
 
-	can_revolution_inherit = yes
+	transferable = no
 
 	weight = 5000
 }
@@ -316,7 +316,7 @@ je_albania_liberated = {
 		}
 	}
 
-	can_revolution_inherit = yes
+	transferable = no
 
 	weight = 5000
 }
@@ -437,7 +437,7 @@ je_decambrist_sympathizers = {
 	
 	progressbar = yes
 	
-	can_revolution_inherit = yes
+	transferable = no
 
 	weight = 5000
 	should_be_pinned_by_default = yes

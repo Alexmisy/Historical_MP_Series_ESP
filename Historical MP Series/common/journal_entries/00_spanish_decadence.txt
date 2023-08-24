@@ -1,0 +1,793 @@
+﻿
+
+je_carlist_issue = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	complete = {
+		ig:ig_landowners = {
+                        is_powerful = no
+                        
+        }
+		 ig:ig_devout = {
+                        is_powerful = no
+                        
+		}
+	}
+
+	on_complete = {
+		set_variable = je_carlist_issue
+		remove_modifier = spa_carlist_issue
+
+	}
+
+	
+
+
+	transferable = no
+	should_be_pinned_by_default = yes
+	weight = 5000
+}
+
+je_economic_instability = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	complete = {
+		
+		
+			investment_pool_gross_income > 25000
+		
+
+			pop_type_percent_country = {
+			pop_type = peasants
+			percent < 0.40
+			
+			}
+			
+			has_law = law_type:law_per_capita_based_taxation
+		}
+
+		
+		
+
+	
+
+	on_complete = {
+	
+		set_variable = je_economic_instability
+		remove_modifier = spa_economic_instability
+		
+	}
+
+
+	transferable = no
+	should_be_pinned_by_default = yes
+	weight = 5000
+}
+
+je_incompetent_army = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"	
+
+	complete = {
+		army_size >= 150
+		has_technology_researched = napoleonic_warfare
+		has_technology_researched = general_staff
+		has_law = law_type:law_professional_army
+		NOT = {
+			any_scope_building = {
+				is_building_type = building_barracks
+				OR = {
+					has_active_production_method = pm_irregular_infantry
+					has_active_production_method = pm_no_artillery
+					has_active_production_method = pm_cannon_artillery
+					has_active_production_method = pm_line_infantry
+				}
+			}
+		}
+	}
+
+	on_complete = {
+		set_variable = je_incompetent_army
+		remove_modifier = spa_incompetent_army
+	}
+	should_be_pinned_by_default = yes
+
+}
+
+je_illiterate_problem = {
+	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+
+	complete = {
+	
+			any_scope_building = {
+			is_building_type = building_university
+			occupancy > 0.9
+			level >= 5
+			}
+			has_technology_researched = dialectics
+			or{
+			
+			has_law = law_type:law_public_schools
+			has_law = law_type:law_private_schools
+			
+			}
+			
+	}
+
+	on_complete = {
+		set_variable = je_illiterate_problem
+		set_variable = je_economic_instability
+		remove_modifier = spa_illiterate_problem
+	}
+	should_be_pinned_by_default = yes
+}
+
+
+
+je_remembering_trafalgar = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+
+	complete = {
+		navy_size >= 80
+	}
+
+	on_complete = {
+		set_variable = je_remembering_trafalgar
+		remove_modifier = spa_remembering_trafalgar
+	}
+
+	should_be_pinned_by_default = yes
+}
+
+je_spanish_decadence = {
+	icon = "gfx/interface/icons/achievements/achievement_agitate_elsewhere.dds"
+
+	
+
+	immediate = {
+		set_variable = {
+			name = kuk_progress_var
+			value = 0
+		}
+	}
+	complete = {
+		has_variable = je_carlist_issue
+		has_variable = je_economic_instability
+		has_variable = je_incompetent_army
+		has_variable = je_illiterate_problem
+		has_variable = je_remembering_trafalgar
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = spanish_decadence.2 
+		}
+		set_variable = je_spanish_decadence
+	}
+	fail = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_variable = je_carlist_issue }
+				}
+				change_variable = {
+					name = kuk_progress_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = je_economic_instability }
+				}
+				change_variable = {
+					name = kuk_progress_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = je_incompetent_army }
+				}
+				change_variable = {
+					name = kuk_progress_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = je_illiterate_problem }
+				}
+				change_variable = {
+					name = kuk_progress_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_variable = je_remembering_trafalgar }
+				}
+				change_variable = {
+					name = kuk_progress_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_entire_state_region = STATE_CUBA}
+				}
+				change_variable = {
+					name = kuk_progress_var
+					add = 0.75
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_entire_state_region = STATE_LUZON}
+				}
+				change_variable = {
+					name = kuk_progress_var
+						add = 0.75
+					}
+			}
+			if = {
+				limit = {
+					NOT = { owns_entire_state_region = STATE_PUERTO_RICO}
+				}
+				change_variable = {
+					name = kuk_progress_var
+					add = 0.25
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_entire_state_region = STATE_VISAYAS}
+				}
+				change_variable = {
+					name = kuk_progress_var
+					add = 0.5
+				}
+			}
+			if = {
+				limit = {
+					NOT = { owns_entire_state_region = STATE_MINDANAO}
+				}
+				change_variable = {
+					name = kuk_progress_var
+					add = 0.25
+				}
+			}
+			
+			
+			if = {
+				limit = {
+					owns_entire_state_region =  STATE_LA_PAZ
+					}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_PASTAZA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_JUJUY
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_ECUADOR
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_SANTA_CRUZ
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_AREQUIPA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_CAJAMARCA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_ICA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_LIMA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_POTOSI
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_TARAPACA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_ANTOFAGASTA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_ACRE
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_BOLIVAR
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_CUNDINAMARCA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_CAUCA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_GUAVIARE
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_ZULIA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_ANTIOQUIA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_MIRANDA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_GUAYANA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_SANTIAGO
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_PATAGONIA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_ARAUCANIA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_LOS_RIOS
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_SOUTH_ATLANTIC_ISLANDS
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_BAJO_PARAGUAY
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_ALTO_PARAGUAY
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_BUENOS_AIRES
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_CHACO
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_TUCUMAN
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_CORRIENTES
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_SANTA_FE
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_RIO_NEGRO
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_SINALOA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_TEXAS
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_SONORA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_CHIHUAHUA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_RIO_GRANDE
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_DURANGO
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_YUCATAN
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_MEXICO
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_VERACRUZ
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_GUERRERO
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_OAXACA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_JALISCO
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_ZACATECAS
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_BAJIO
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_CHIAPAS
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_BAJA_CALIFORNIA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_SAN_SALVADOR
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_GUATEMALA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_HONDURAS
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_NICARAGUA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_COSTA_RICA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+			if = {
+				limit = {
+			owns_entire_state_region = STATE_PANAMA
+			}
+				change_variable = {
+					name = kuk_progress_var
+					add = -0.20
+				}
+			}
+
+		}
+	}
+	
+	on_fail = {
+		trigger_event = { 
+			id = spanish_decadence.1
+		}
+		
+	}
+	
+	current_value = {
+		value = root.var:kuk_progress_var
+	}
+	
+	goal_add_value = {
+		value = 700
+	}
+
+
+	progressbar = yes
+	weight = 100
+	should_be_pinned_by_default = yes
+}

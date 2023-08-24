@@ -82,7 +82,7 @@
 
 	progressbar = yes
 
-	can_revolution_inherit = yes
+	transferable = no
 
 	weight = 5000
 	should_be_pinned_by_default = yes

@@ -1,0 +1,43 @@
+﻿risorgimiento_italian = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	complete = {
+		OR = {
+
+		this = c:ITA
+
+		}
+	}
+
+	on_complete = {
+
+		s:STATE_LOMBARDY ={
+			add_homeland = north_italian
+		}
+		s:STATE_CORSICA ={
+			add_homeland = north_italian
+		}
+
+		s:STATE_SOUTH_TYROL ={
+			add_homeland = north_italian
+		}
+				
+		s:STATE_VENETIA ={
+			add_homeland = north_italian
+		}
+		s:STATE_ISTRIA ={
+			add_homeland = north_italian
+		}
+		s:STATE_MALTA ={
+			add_homeland = north_italian
+		}
+	}
+
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+
+
+
+
+}

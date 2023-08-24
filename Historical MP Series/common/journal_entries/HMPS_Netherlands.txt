@@ -13,15 +13,12 @@
 		s:STATE_WALLONIA = {
 			add_homeland = dutch
 		}
-	}
-
-	timeout = 1825
-
-	on_timeout = {
 		trigger_event = {
-			id = NET_flavor_evt.1
+			id = baby_boom.1
 		}
 	}
+
+
 
 	weight = 10000
 	should_be_pinned_by_default = yes

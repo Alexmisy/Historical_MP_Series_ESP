@@ -1,0 +1,29 @@
+e_unification = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	
+	
+
+	complete = {
+		
+			
+		OR = {
+		this = c:IBE
+		this = c:GER
+		this = c:ITA
+		this = c:SCA
+		}
+
+		is_at_war = no
+	
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = baby_boom.1
+		}
+	}
+
+	invalid = {
+	
+	}

@@ -133,56 +133,6 @@
 					add = 1
 				}
 			}
-			if = {
-				limit = {
-					is_enacting_law = law_type:law_slavery_banned
-				}
-				every_interest_group = {
-					limit = {
-						is_interest_group_type = ig_landowners
-						leader = {
-							NOT = { 
-								OR = {
-									has_ideology = ideology:ideology_slaver
-									has_ideology = ideology:ideology_jacksonian_democrat
-								}
-							}
-						}
-					}
-					leader = {
-						set_ideology = ideology:ideology_slaver
-					}
-				}
-				every_interest_group = {
-					limit = {
-						is_interest_group_type = ig_rural_folk
-						leader = {
-							NOT = { 
-								OR = {
-									has_ideology = ideology:ideology_slaver
-									has_ideology = ideology:ideology_jacksonian_democrat
-								}
-							}
-						}
-					}
-					leader = {
-						set_ideology = ideology:ideology_jacksonian_democrat
-					}
-				}
-				every_interest_group = {
-					limit = {
-						OR = {
-							is_interest_group_type = ig_landowners
-							is_interest_group_type = ig_rural_folk
-						}
-					}
-					remove_modifier = defence_of_slavery
-					add_modifier = {
-						name = defence_of_slavery
-						months = 1
-					}
-				}
-			}
 		}
 		random_events = {
 			# American Civil War buildup
@@ -301,9 +251,7 @@ je_acw_reincorporate = {
 			any_scope_state = {
 				state_region = {
 					is_homeland = cu:dixie
-					NOT = { is_homeland = cu:yankee }
 				}
-				has_modifier = unreconstructed_state
 				loyalist_fraction = {
 					value < 0.2
 					culture = cu:dixie
@@ -314,8 +262,8 @@ je_acw_reincorporate = {
 
 	on_complete = {
 		custom_tooltip = {
-			text = gain_dixie_culture
-			set_variable = acw_gain_dixie
+			text = dont_lose_dixie_culture
+			set_variable = acw_keep_dixie
 		}
 		custom_tooltip = {
 			text = reconstruction_progress
@@ -346,44 +294,16 @@ je_acw_reincorporate = {
 	}
 
 	timeout = 4380
-	
-	should_be_pinned_by_default = yes
 }
 
 je_acw_equality = {
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 
 	complete = {
-		NOT = {
-			any_interest_group = {
-				OR = {
-					law_stance = {
-						law = law_type:law_slave_trade
-						value > neutral
-					}
-					law_stance = {
-						law = law_type:law_debt_slavery
-						value > neutral
-					}
-					law_stance = {
-						law = law_type:law_legacy_slavery
-						value > neutral
-					}
-				}
-				is_marginal = no
-			}
-		}
-		NOT = {
-			any_scope_state = {
-				state_region = {
-					is_homeland = cu:dixie
-					NOT = { is_homeland = cu:yankee }
-				}
-				has_modifier = unreconstructed_state
-				loyalist_fraction = {
-					value < 0.1
-					culture = cu:afro_american
-				}
+		custom_tooltip = {
+			text = acw_african_american_culture_complete_tt
+			cu:afro_american = {
+				NOT = { culture_is_discriminated_in = ROOT }
 			}
 		}
 	}
@@ -412,8 +332,6 @@ je_acw_equality = {
 	}
 
 	timeout = 4380
-	
-	should_be_pinned_by_default = yes
 
 	invalid = {
 		NOT = {
@@ -516,6 +434,4 @@ je_acw_wild_wild_west = {
 	progressbar = yes
 
 	timeout = 4380
-	
-	should_be_pinned_by_default = yes
 }
