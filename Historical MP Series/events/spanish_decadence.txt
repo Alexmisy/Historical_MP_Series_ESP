@@ -1,0 +1,76 @@
+namespace = spanish_decadence
+
+spanish_decadence.1 = { 
+	type = country_event
+	
+
+	title = spanish_decadence.1.t
+	desc = spanish_decadence.1.d
+	flavor = spanish_decadence.1.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+		
+	
+	trigger = {
+
+	}
+
+
+	option = { #starts JE
+		name = spanish_decadence.1.a
+		default_option = yes
+		add_modifier = {
+			name = spa_spanish_decadence
+			is_decaying = yes
+			years = 50
+		}	
+	}
+}
+spanish_decadence.2 = { 
+	type = country_event
+	
+
+	title = plus_ultra.1.t
+	desc = plus_ultra.1.d
+	flavor = plus_ultra.1.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+		
+	
+	trigger = {
+
+	}
+
+	option = { #starts JE
+
+		name = plus_ultra.1.a
+
+		default_option = yes
+
+		add_modifier = {
+
+			name = spa_plus_ultra	
+
+		}	
+
+	}
+
+}

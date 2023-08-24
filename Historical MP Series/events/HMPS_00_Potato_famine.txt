@@ -168,7 +168,6 @@ potato_blight.1 = {
 			}
 			add_modifier = {
 				name = principled_opposition
-				months = 60
 			}
 		}
 		ai_chance = {
@@ -315,7 +314,6 @@ potato_blight.2 = {
 			}
 			add_modifier = {
 				name = principled_opposition
-				months = 60
 			}
 		}
 		ai_chance = {
@@ -352,6 +350,7 @@ potato_blight.3 = {
 		NOT = {
 			has_global_variable = irish_famine_happened
 		}
+		#This is broken, this event fires multiple times
 		AND = {
 			has_modifier = devastating_famine
 			any_scope_state = {
@@ -444,7 +443,6 @@ potato_blight.3 = {
 			}
 			add_modifier = {
 				name = principled_opposition_foreign
-				months = 120
 			}
 		}
 		ai_chance = {
@@ -665,7 +663,6 @@ potato_blight.5 = {
 			}
 			add_modifier = {
 				name = principled_opposition
-				months = 60
 				multiplier = 0.75				
 			}
 		}
@@ -798,8 +795,7 @@ potato_blight.6 = {
 			}
 			add_modifier = {
 				name = principled_opposition
-				multiplier = 0.75
-				months = 60
+				multiplier = 0.75				
 			}
 		}
 		custom_tooltip = {
@@ -908,7 +904,6 @@ potato_blight.7 = {
 				has_modifier = potato_famine_relief
 			}
 			remove_modifier = potato_famine_relief
-			
 		}
 	}
 }

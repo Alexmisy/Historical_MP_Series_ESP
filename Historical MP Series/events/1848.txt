@@ -242,10 +242,7 @@
 		every_interest_group = {
 			limit = {
 				leader = {
-					OR = {
-						has_ideology = ideology:ideology_slaver
-						has_ideology = ideology:ideology_jacksonian_democrat
-					}
+					has_ideology = ideology_slaver	
 				}
 			}
 			leader = {

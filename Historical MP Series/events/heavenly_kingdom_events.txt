@@ -434,20 +434,6 @@ heavenly.4 = {
 					months = 240
 					is_decaying = yes
 				}
-				
-				add_journal_entry = {
-					type = je_warlord_china
-				}
-				add_modifier = {
-					name = chinese_political_instability
-					is_decaying = no
-					years = -1
-				}
-				add_modifier = {
-					name = chinese_economic_stagnation
-					is_decaying = no
-					years = -1
-				}
 			}
 		}
 		if = {
@@ -606,7 +592,8 @@ heavenly.5 = {
 	option = { # mercy and pardons
 		name = heavenly.5.b
 		add_loyalists = {
-			value = 0.05
+			value = 0.2
+			religion = rel:protestant
 		}
 		every_country = {
 			limit = {
