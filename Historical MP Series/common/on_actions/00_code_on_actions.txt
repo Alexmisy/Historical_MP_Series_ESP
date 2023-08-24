@@ -2,6 +2,7 @@
 
 # Root = Country
 on_monthly_pulse_country = {
+		
 	events = {
 		communism.8 # Red Army
 		peoples_springtime.1
@@ -20,15 +21,16 @@ on_monthly_pulse_country = {
 		gutter_crown.8
 		gutter_crown.9
 		hmps_diplo.1
-		railroad_bubble.3
-		railroad_bubble.4
-		
+	
+	
 		# Exile Agitators Events
 		yeet_agitator_events.1
 		yeet_agitator_events.2
 		yeet_agitator_events.3
 	}
 	effect = {
+			
+		
 		every_character_in_exile_pool = {
 			limit = {
 				popularity <= 15
@@ -221,46 +223,6 @@ on_monthly_pulse_country = {
 		}
 		if = {
 			limit = {
-				NOT = { has_modifier = chinese_political_instability }
-				THIS = c:CHI
-				exists = c:CHI
-				has_journal_entry = je_warlord_china
-			}
-			c:CHI = {
-				add_modifier = {
-					name = chinese_political_instability
-					is_decaying = no
-					years = -1
-				}
-				add_modifier = {
-					name = chinese_economic_stagnation
-					is_decaying = no
-					years = -1
-				}
-			}
-		}
-		if = {
-			limit = {
-				NOT = { has_modifier = chinese_political_instability }
-				THIS = c:TPG
-				exists = c:TPG
-				has_journal_entry = je_warlord_china
-			}
-			c:TPG = {
-				add_modifier = {
-					name = chinese_political_instability
-					is_decaying = no
-					years = -1
-				}
-				add_modifier = {
-					name = chinese_economic_stagnation
-					is_decaying = no
-					years = -1
-				}
-			}
-		}
-		if = {
-			limit = {
 				NOT = { has_modifier = china_ai_help }
 				THIS = c:CHI
 				exists = c:CHI
@@ -280,28 +242,6 @@ on_monthly_pulse_country = {
 				is_player = yes
 			}
 			c:CHI = { remove_modifier = china_ai_help }
-		}
-		if = {
-			limit = {
-				NOT = { has_modifier = eic_ai_help }
-				THIS = c:BIC
-				exists = c:BIC
-				is_player = no
-			}
-			c:BIC = {
-				add_modifier = {
-					name = eic_ai_help
-				}
-			}
-		}
-		if = {
-			limit = {
-				has_modifier = eic_ai_help
-				THIS = c:BIC
-				exists = c:BIC
-				is_player = yes
-			}
-			c:BIC = { remove_modifier = eic_ai_help }
 		}
 		if = {
 			limit = {
@@ -495,9 +435,6 @@ on_yearly_pulse_country = { #Krakatoa special pulse
 }
 
 on_yearly_pulse_country = {
-	events = {
-		railroad_bubble.2
-	}
 	effect = {
 		# IG leader death
 		random_list = {
@@ -991,9 +928,9 @@ on_decade_pulse_state = {}
 # scope:defender = defending commander
 # scope:state = location state
 on_battle_started = {
-    on_actions = {
-        FAE_on_battle_started
-    }
+	effect = {
+		
+	}
 }
 
 # Root = attacker or defender country
@@ -1001,11 +938,7 @@ on_battle_started = {
 # scope:attacker = attacking commander
 # scope:defender = defending commander
 # scope:state = location state
-on_battle_ended = {
-    on_actions = {
-        FAE_on_battle_ended
-    }
-}
+on_battle_ended = {}
 
 # Root = attacker or defender country
 # scope:battle = battle
@@ -1035,22 +968,6 @@ on_start_expanding_building = {
 
 # Root = Building
 on_building_expanded = {
-	effect = {
-		# when a railroad finishes expanding, increase railroad variable
-		if = {
-			limit = {
-				OR = {
-					is_building_type = building_railway
-					is_building_type = building_port
-				}
-			}
-			this.owner = {
-				trigger_event = {
-					id = "railroad_bubble.1"
-				}
-			}
-		}
-	}
 }
 
 # Does not appear
@@ -2520,18 +2437,6 @@ on_law_enactment_pass = {
 			}
 			set_variable = achievement_amish_paradise_var
 		}
-		if = {
-			limit = {
-				has_modifier = renowned_playwright
-			}
-			remove_modifier = renowned_playwright 
-		}
-		every_interest_group = {
-			limit = {
-				has_modifier = popular_works_of_charity
-			}
-			remove_modifier = popular_works_of_charity 
-		}
 	}
 }
 
@@ -2544,19 +2449,6 @@ on_law_enactment_pass = {
 on_law_enactment_fail = {
 	effect = {
 		post_notification = enactment_failed
-		
-		if = {
-			limit = {
-				has_modifier = renowned_playwright
-			}
-			remove_modifier = renowned_playwright 
-		}
-		every_interest_group = {
-			limit = {
-				has_modifier = popular_works_of_charity
-			}
-			remove_modifier = popular_works_of_charity 
-		}
 	}
 }
 
@@ -2568,20 +2460,6 @@ on_law_enactment_fail = {
 # is still considered being enacted, therefore the `currently_enacting_law` link
 # will work as expected, even though the enactment is _just_ about to end
 on_law_enactment_ended = {
-	effect = {
-		if = {
-			limit = {
-				has_modifier = renowned_playwright
-			}
-			remove_modifier = renowned_playwright 
-		}
-		every_interest_group = {
-			limit = {
-				has_modifier = popular_works_of_charity
-			}
-			remove_modifier = popular_works_of_charity 
-		}
-	}
 }
 
 # Root owner Country of the Law
@@ -2773,7 +2651,6 @@ on_civil_war_won = {
 			limit = {
 				has_variable = revolutionary_prov_gov_var
 			}
-			remove_variable = revolutionary_prov_gov_var
 			trigger_event = { id = provisional_government_events.1 days = 7 popup = yes }
 		}
 
@@ -3361,9 +3238,6 @@ on_wargoal_removed = {
 # scope:actor = Initiator country
 # scope:target = Target country
 on_war_end = {
-    on_actions = {
-        FAE_oa_on_war_end
-    }
 	effect = {
 		scope:actor = {
 			set_variable = {

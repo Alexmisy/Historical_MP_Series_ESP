@@ -32,15 +32,6 @@ party_exploit_fixer = {
 	interest_group_approval_add = 20
 }
 
-france_baby_bust = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_accepted_birth_rate_mult = -0.25
-}
-
-france_early_game_birth_fix = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_accepted_birth_rate_mult = 0.15
-}
 
 southern_planter_victory = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
@@ -110,24 +101,6 @@ china_ai_help = {
 	state_radicals_from_discrimination_mult = -0.75
 	country_loan_interest_rate_add = -0.5
 	country_minting_mult = 0.33
-}
-eic_ai_help = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	interest_group_ig_armed_forces_approval_add = 2
-	interest_group_ig_devout_approval_add = 2
-	interest_group_ig_industrialists_approval_add = 2
-	interest_group_ig_intelligentsia_approval_add = 2
-	interest_group_ig_landowners_approval_add = 2
-	interest_group_ig_petty_bourgeoisie_approval_add = 2
-	interest_group_ig_rural_folk_approval_add = 2
-	interest_group_ig_trade_unions_approval_add = 2
-	state_radicals_from_sol_change_mult = -0.1
-	state_shopkeepers_investment_pool_efficiency_mult = 1
-	state_capitalists_investment_pool_efficiency_mult = 1
-	state_aristocrats_investment_pool_efficiency_mult = 1
-	state_farmers_investment_pool_efficiency_mult = 1
-	technology_invention_cost_mult = -0.25
-	country_tech_spread_mult = 0.25
 }
 british_lost_opium_wars = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
@@ -239,65 +212,72 @@ liberal_germany = {
 	interest_group_ig_intelligentsia_approval_add = 10
 }
 
-#Updated Upstream
-japanese_independence_unrest = {
+
+baby_boom = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_accepted_birth_rate_mult = 0.35
+}
+Tradicional_society = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_accepted_birth_rate_mult = 0.1
+}
+spa_carlist_issue = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	state_turmoil_effects_mult = 0.15
-	country_authority_mult = -0.1
-	interest_group_ig_armed_forces_approval_add = -1
-	interest_group_ig_devout_approval_add = -1
-	interest_group_ig_intelligentsia_approval_add = -1
-	interest_group_ig_landowners_approval_add = -1
-	interest_group_ig_petty_bourgeoisie_approval_add = -1
-}
-
-usa_isolationism = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	state_migration_pull_mult = 0.10
-}
-usa_imperialism = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
-	interest_group_ig_armed_forces_approval_add = 5
-	interest_group_ig_armed_forces_pol_str_mult = 0.5
-	interest_group_ig_landowners_approval_add = 5
+	interest_group_ig_landowners_approval_add = -5
+	interest_group_ig_devout_approval_add = -5
 	interest_group_ig_landowners_pol_str_mult = 0.25
+	interest_group_ig_devout_pol_str_mult = 0.25
 }
-usa_notoriety = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
-	interest_group_ig_intelligentsia_approval_add = -10
-	interest_group_ig_rural_folk_approval_add = -10
-	interest_group_ig_trade_unions_approval_add = -10
-	state_turmoil_effects_mult = 0.5
-	country_authority_mult = -0.25
-	state_radicals_from_sol_change_mult = 0.4
+spa_economic_instability = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	building_throughput_mult = -0.25
+	building_barracks_throughput_mult = 0.25	
+}
+spa_incompetent_army = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	country_military_goods_cost_mult = 0.2
+	unit_army_offense_mult = -0.1
+	unit_army_defense_mult = -0.1	
+	
+}
+spa_illiterate_problem = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
+	country_tech_spread_mult = -0.2	
+	state_education_access_add = -0.1
+}
+spa_remembering_trafalgar = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_explosion_negative.dds
+	country_navy_power_projection_mult = -0.5
+	unit_navy_defense_mult = -0.2
+	unit_navy_offense_mult = -0.2
+}
+spa_spanish_decadence = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	country_prestige_mult= -200
+	interest_group_approval_add = -5
+	country_loan_interest_rate_mult = 0.15
+	country_bureaucracy_mult = -0.25
+	country_government_wages_mult = 0.25
+	state_education_access_add= -0.15
+}
+spa_plus_ultra = {
+	icon = gfx/interface/icons/production_method_icons/unused/propaganda_posters.dds
+	country_prestige_add= 100
+	country_legitimacy_base_add = 5
+	interest_group_approval_add = 2
+	country_authority_add = 100
+	
 }
 
-###
+second_reconquista = {
+	icon = gfx/interface/icons/achievements/grander_colombia.dds
+	
+	building_arms_industry_throughput_mult = 1	
+	building_artillery_industry_throughput_mult = 1	
+	state_conscription_rate_add	= 0.04
+	country_diplomatic_play_maneuvers_add = 120
+		
 
-overvalued_railroads_building = {
-	icon = gfx\interface\icons\timed_modifier_icons\modifier_coins_positive.dds
-	building_railway_throughput_mult = 0.05		# Max = 100%
+	
 }
-
-overvalued_railroads_state = {
-	icon = gfx\interface\icons\timed_modifier_icons\modifier_coins_positive.dds
-	state_infrastructure_mult = -0.02			# Max = -40%
-	state_construction_mult = 0.015				# Max = 30%
-}
-
-railroad_bubble = {
-	icon = gfx\interface\icons\timed_modifier_icons\modifier_coins_positive.dds
-	state_capitalists_investment_pool_efficiency_mult = 0.33
-}
-
-rr_bubble_pop = {
-	icon = gfx\interface\icons\timed_modifier_icons\modifier_coins_negative.dds
-	state_capitalists_investment_pool_efficiency_mult = -0.04		# Max = -80%
-	state_radicals_from_sol_change_mult = 0.02						# Max = 40%
-	country_loan_interest_rate_add = 0.05							# Max = 100%
-}
-
-defence_of_slavery = {
-	icon = gfx\interface\icons\timed_modifier_icons\modifier_fist_negative.dds
-	interest_group_approval_add = -20
-}
+	
