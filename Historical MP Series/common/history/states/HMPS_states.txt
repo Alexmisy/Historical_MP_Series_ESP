@@ -1,4 +1,6 @@
 STATES = {
+
+
 	### Greater Massachusetts
 	s:STATE_CONNECTICUT = {
 		create_state = {
