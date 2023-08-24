@@ -1,6 +1,6 @@
 ﻿BUILDINGS={
 	s:STATE_BIHAR={
-		region_state:BIC={
+		region_state:GBR={
 			create_building={
 				building="building_arms_industry"
 				level=1
@@ -13,12 +13,7 @@
 				reserves=1
 				activate_production_methods={ "pm_cannons" }
 			}
-			create_building={
-				building="building_government_administration"
-				level=3
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
+			
 			create_building={
 				building="building_tea_plantation"
 				level=5
@@ -52,13 +47,8 @@
 		}
 	}
 	s:STATE_NORTH_BENGAL={
-		region_state:BIC={
-			create_building={
-				building="building_government_administration"
-				level=5
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
+		region_state:GBR={
+			
 			create_building={
 				building="building_glassworks"
 				level=5
@@ -98,13 +88,8 @@
 		}
 	}
 	s:STATE_ASSAM={
-		region_state:BIC={
-			create_building={
-				building="building_government_administration"
-				level=2
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
+		region_state:GBR={
+			
 			create_building={
 				building="building_opium_plantation"
 				level=15
@@ -126,13 +111,8 @@
 		}
 	}
 	s:STATE_DELHI={
-		region_state:BIC={
-			create_building={
-				building="building_government_administration"
-				level=8
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
+		region_state:GBR={
+		
 			create_building={
 				building="building_construction_sector"
 				level=1
@@ -228,7 +208,7 @@
 				activate_production_methods={ "pm_irregular_infantry" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_no_artillery" }
 			}
 		}
-		region_state:BIC={
+		region_state:GBR={
 			create_building={
 				building="building_furniture_manufacturies"
 				level=3
@@ -384,7 +364,7 @@
 				activate_production_methods={ "pm_irregular_infantry" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_no_artillery" }
 			}
 		}
-		region_state:BIC={
+		region_state:GBR={
 			create_building={
 				building="building_cotton_plantation"
 				level=1
@@ -538,7 +518,7 @@
 				activate_production_methods={ "pm_line_infantry" "pm_cannon_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
 		}
-		region_state:BIC={
+		region_state:GBR={
 		}
 	}
 	s:STATE_NAGPUR={
@@ -612,13 +592,8 @@
 		}
 	}
 	s:STATE_SOUTH_BENGAL={
-		region_state:BIC={
-			create_building={
-				building="building_government_administration"
-				level=10
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
+		region_state:GBR={
+			
 			create_building={
 				building="building_construction_sector"
 				level=2
@@ -798,7 +773,7 @@
 		}
 	}
 	s:STATE_CEYLON={
-		region_state:BIC={
+		region_state:GBR={
 			create_building={
 				building="building_fishing_wharf"
 				level=2
@@ -876,17 +851,12 @@
 				activate_production_methods={ "default_building_sugar_plantation" "pm_road_carts" "pm_privately_owned_plantation" }
 			}
 		}
-		region_state:BIC={
+		region_state:GBR={
 		}
 	}
 	s:STATE_CIRCARS={
-		region_state:BIC={
-			create_building={
-				building="building_government_administration"
-				level=5
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
+		region_state:GBR={
+			
 			create_building={
 				building="building_textile_mills"
 				level=5
@@ -964,7 +934,7 @@
 				activate_production_methods={ "pm_irregular_infantry" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_no_artillery" }
 			}
 		}
-		region_state:BIC={
+		region_state:GBR={
 			create_building={
 				building="building_coffee_plantation"
 				level=1
@@ -1000,7 +970,7 @@
 				activate_production_methods={ "pm_irregular_infantry" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_no_artillery" }
 			}
 		}
-		region_state:BIC={
+		region_state:GBR={
 			create_building={
 				building="building_coffee_plantation"
 				level=2
@@ -1030,13 +1000,8 @@
 				activate_production_methods={ "pm_basic_port" }
 			}
 		}
-		region_state:BIC={
-			create_building={
-				building="building_government_administration"
-				level=8
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
+		region_state:GBR={
+			
 			create_building={
 				building="building_construction_sector"
 				level=1
@@ -1172,13 +1137,8 @@
 				activate_production_methods={ "pm_anchorage" }
 			}
 		}
-		region_state:BIC={
-			create_building={
-				building="building_government_administration"
-				level=8
-				reserves=1
-				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
+		region_state:GBR={
+			
 			create_building={
 				building="building_construction_sector"
 				level=1

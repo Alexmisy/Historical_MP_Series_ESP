@@ -31,5 +31,9 @@
 		ig:ig_landowners = {
 			set_interest_group_name = ig_gentry_assembly
 		}
+		add_modifier = {
+			name = Tradicional_society
+			
+		}
 	}
 }

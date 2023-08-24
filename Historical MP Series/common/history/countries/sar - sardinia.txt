@@ -38,5 +38,11 @@
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
 		}
+		add_journal_entry = { 
+			type = e_unification 
+		}
+		add_journal_entry = { 
+			type = risorgimiento_italian 
+		}
 	}
 }

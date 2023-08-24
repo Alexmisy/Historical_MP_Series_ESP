@@ -340,7 +340,7 @@ GLOBAL = {
 	}
 
 	c:UCA = {
-		add_radicals = {
+		add_radicals_in_state = {
 			value = 1.2
 		}
 	}

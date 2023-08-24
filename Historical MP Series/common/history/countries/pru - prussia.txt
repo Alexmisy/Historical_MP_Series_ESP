@@ -57,5 +57,8 @@
 		add_journal_entry = {
 			type = je_gutter_crown
 		}
+		add_journal_entry = { 
+			type = e_unification 
+		}
 	}
 }

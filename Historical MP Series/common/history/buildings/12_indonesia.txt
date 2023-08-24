@@ -116,7 +116,7 @@
 				activate_production_methods={ "pm_anchorage" }
 			}			
 		}
-		region_state:DEI={
+		region_state:NET={
 		}
 		region_state:PON={
 			create_building={
@@ -168,7 +168,7 @@
 		}
 	}
 	s:STATE_EAST_BORNEO={
-		region_state:DEI={
+		region_state:NET={
 			create_building={
 				building="building_rice_farm"
 				level=1
@@ -226,7 +226,7 @@
 		}
 	}
 	s:STATE_WEST_JAVA={
-		region_state:DEI={
+		region_state:NET={
 			create_building={
 				building="building_government_administration"
 				level=4
@@ -302,7 +302,7 @@
 		}
 	}
 	s:STATE_EAST_JAVA={
-		region_state:DEI={
+		region_state:NET={
 			create_building={
 				building="building_government_administration"
 				level=3
@@ -360,7 +360,7 @@
 		}
 	}
 	s:STATE_CENTRAL_JAVA={
-		region_state:DEI={
+		region_state:NET={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -452,7 +452,7 @@
 		}
 	}
 	s:STATE_NORTH_SUMATRA={
-		region_state:DEI={
+		region_state:NET={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -526,7 +526,7 @@
 		}
 	}
 	s:STATE_SOUTH_SUMATRA={
-		region_state:DEI={
+		region_state:NET={
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -612,7 +612,7 @@
 				activate_production_methods={ "pm_irregular_infantry" "pm_wound_dressing" "pm_cavalry_scouts" "pm_no_specialists" "pm_no_artillery" }
 			}			
 		}
-		region_state:DEI={
+		region_state:NET={
 			create_building={
 				building="building_rice_farm"
 				level=1
@@ -638,7 +638,7 @@
 		}
 	}
 	s:STATE_MOLUCCAS={
-		region_state:DEI={
+		region_state:NET={
 			create_building={
 				building="building_tea_plantation"
 				level=1
@@ -692,7 +692,7 @@
 		}
 	}
 	s:STATE_CELEBES={
-		region_state:DEI={
+		region_state:NET={
 			create_building={
 				building="building_port"
 				level=1
@@ -760,7 +760,7 @@
 				activate_production_methods={ "pm_anchorage" }
 			}
 		}
-		region_state:DEI={
+		region_state:NET={
 			create_building={
 				building="building_tobacco_plantation"
 				level=3
@@ -776,15 +776,15 @@
 		}
 	}
 	s:STATE_MINDANAO={
-		region_state:PHI={
+		region_state:SPA={
 			create_building={
 				building="building_rice_farm"
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
-		}
-		region_state:SUL={
+		
+		
 			create_building={
 				building="building_barracks"
 				level=2
@@ -803,8 +803,8 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 			}
-		}
-		region_state:MGD={
+		
+		
 			create_building={
 				building="building_barracks"
 				level=5
@@ -820,7 +820,7 @@
 		}
 	}
 	s:STATE_LUZON={
-		region_state:PHI={
+		region_state:SPA={
 			create_building={
 				building="building_government_administration"
 				level=4
@@ -870,11 +870,10 @@
 				activate_production_methods={ "pm_simple_hardwood_forestry"  "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_hardwood_forestry" }
 			}
 		}
-		region_state:SUL={
-		}
+		
 	}
 	s:STATE_VISAYAS={
-		region_state:PHI={
+		region_state:SPA={
 			create_building={
 				building="building_sugar_plantation"
 				level=3

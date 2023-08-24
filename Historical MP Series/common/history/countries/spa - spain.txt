@@ -49,8 +49,66 @@
 			add_ideology = ideology_pious
 		}
 		
-		add_journal_entry = {
-			type = je_carlist_war_SPA
+
+		add_journal_entry = { 
+		
+			type = e_unification 
+			
 		}
+		add_journal_entry = { 
+		
+			
+		 
+		
+		type = je_carlist_issue
+			}
+		add_journal_entry = { 
+		
+		
+		
+		type = je_economic_instability
+		}
+		
+		add_journal_entry = { 
+		
+			type = je_incompetent_army
+		}
+		add_journal_entry = { 
+		
+			type = je_illiterate_problem
+		}
+		
+		add_journal_entry = { 
+		
+			type = je_remembering_trafalgar
+		}
+		add_journal_entry = { 	
+			
+			type = je_spanish_decadence
+		}
+			
+		add_modifier = {
+		
+			name =spa_carlist_issue
+		}	
+		add_modifier = {
+			name =spa_economic_instability
+		}	
+		add_modifier = {	
+			name =spa_incompetent_army
+		}	
+		add_modifier = {	
+			name =spa_illiterate_problem
+		}	
+		add_modifier = {	
+			name =spa_remembering_trafalgar
+		}
+		add_modifier = {	
+			name =second_reconquista
+			
+			years = 10
+		}
+	
+		
 	}
 }
