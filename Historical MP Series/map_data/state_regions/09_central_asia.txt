@@ -9,7 +9,7 @@
     arable_land = 30
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_logging = 4
+        bg_logging = 6
     }
 }
 
@@ -25,14 +25,14 @@ STATE_KUBAN = {
     arable_land = 80
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_coal_mining = 32
-        bg_lead_mining = 27
-        bg_logging = 6
-        bg_fishing = 7
+        bg_coal_mining = 48
+        bg_lead_mining = 40
+        bg_logging = 9
+        bg_fishing = 10
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 45
     }
     naval_exit_id = 3036
 }
@@ -48,9 +48,9 @@ STATE_ARMENIA = {
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" }
     capped_resources = {
-        bg_iron_mining = 27
-        bg_lead_mining = 21
-        bg_logging = 2
+        bg_iron_mining = 40
+        bg_lead_mining = 31
+        bg_logging = 3
     }
 }
 
@@ -66,12 +66,12 @@ STATE_AZERBAIJAN = {
     arable_land = 25
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_lead_mining = 18
-        bg_logging = 6
+        bg_lead_mining = 27
+        bg_logging = 9
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 100
+        undiscovered_amount = 150
     }
 }
 
@@ -88,10 +88,10 @@ STATE_GREATER_CAUCASUS = {
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_tea_plantations" }
     capped_resources = {
-        bg_coal_mining = 40
-        bg_iron_mining = 24
-        bg_lead_mining = 24
-        bg_logging = 8
+        bg_coal_mining = 60
+        bg_iron_mining = 36
+        bg_lead_mining = 36
+        bg_logging = 12
     }
     naval_exit_id = 3036
 }
@@ -107,12 +107,12 @@ STATE_SAMARA = {
     arable_land = 140
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 30
-        bg_logging = 9
+        bg_iron_mining = 45
+        bg_logging = 13
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 45
     }
 }
 
@@ -128,7 +128,7 @@ STATE_KAZAN = {
     arable_land = 140
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 25
+        bg_logging = 37
     }
 }
 
@@ -144,12 +144,12 @@ STATE_TARTARIA = {
     arable_land = 170
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 45
-        bg_logging = 8
+        bg_iron_mining = 67
+        bg_logging = 12
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 60
+        undiscovered_amount = 90
     }
 }
 
@@ -165,8 +165,8 @@ STATE_ASTRAKHAN = {
     arable_land = 80
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 6
-		bg_minor_canals = 2
+        bg_logging = 9
+		bg_minor_canals = 3
     }
 }
 
@@ -181,11 +181,11 @@ STATE_URALSK = {
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 7
+        bg_logging = 10
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 60
+        undiscovered_amount = 90
     }
 }
 
@@ -201,7 +201,7 @@ STATE_KHIVA = {
     arable_land = 20
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_opium_plantations" }
     capped_resources = {
-        bg_logging = 4
+        bg_logging = 6
     }
 }
 
@@ -216,7 +216,7 @@ STATE_UZBEKIA = {
     arable_land = 100
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_opium_plantations" "bg_tea_plantations" }
     capped_resources = {
-        bg_logging = 6
+        bg_logging = 9
     }
 }
 
@@ -231,8 +231,8 @@ STATE_TAJIKISTAN = {
     arable_land = 30
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tea_plantations" "bg_opium_plantations" }
     capped_resources = {
-        bg_coal_mining = 36
-        bg_logging = 2
+        bg_coal_mining = 54
+        bg_logging = 3
     }
 }
 
@@ -247,12 +247,12 @@ STATE_KIRGHIZIA = {
     arable_land = 40
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_tea_plantations" }
     capped_resources = {
-        bg_coal_mining = 32
-        bg_logging = 6
+        bg_coal_mining = 48
+        bg_logging = 9
     }
     resource = {
         type = "bg_oil_extraction"
-        undiscovered_amount = 30
+        undiscovered_amount = 45
     }
 }
 
@@ -267,8 +267,8 @@ STATE_TURKMENIA = {
     arable_land = 35
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_silk_plantations" "bg_opium_plantations" }
     capped_resources = {
-        bg_sulfur_mining = 40
-        bg_logging = 2
+        bg_sulfur_mining = 60
+        bg_logging = 3
     }
 }
 
@@ -283,8 +283,8 @@ STATE_SEMIRECHE = {
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 28
-        bg_logging = 4
+        bg_coal_mining = 42
+        bg_logging = 6
     }
 }
 
@@ -299,8 +299,8 @@ STATE_JETISY = {
     arable_land = 50
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
-        bg_coal_mining = 12
-        bg_logging = 4
+        bg_coal_mining = 18
+        bg_logging = 6
     }
 }
 
@@ -315,8 +315,8 @@ STATE_AKMOLINSK = {
     arable_land = 30
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
-        bg_iron_mining = 21
-        bg_logging = 5
+        bg_iron_mining = 31
+        bg_logging = 7
     }
 }
 
@@ -332,7 +332,7 @@ STATE_PASHTUNISTAN = {
     arable_land = 25
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_opium_plantations" "bg_tea_plantations" }
     capped_resources = {
-        bg_logging = 6
+        bg_logging = 9
     }
 }
 
@@ -348,8 +348,8 @@ STATE_WESTERN_AFGHANISTAN = {
     arable_land = 100
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_silk_plantations" "bg_opium_plantations" "bg_tea_plantations" }
     capped_resources = {
-        bg_coal_mining = 32
-        bg_logging = 4
+        bg_coal_mining = 48
+        bg_logging = 6
     }
 }
 
@@ -365,9 +365,9 @@ STATE_EASTERN_AFGHANISTAN = {
     arable_land = 90
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tea_plantations" }
     capped_resources = {
-        bg_coal_mining = 24
-        bg_iron_mining = 24
-        bg_logging = 7
+        bg_coal_mining = 36
+        bg_iron_mining = 36
+        bg_logging = 10
     }
 }
 
@@ -384,10 +384,10 @@ STATE_BALUCHISTAN = {
     arable_land = 50
     arable_resources = { "bg_wheat_farms" "bg_livestock_ranches" "bg_dye_plantations" "bg_opium_plantations" "bg_tea_plantations" }
     capped_resources = {
-        bg_iron_mining = 24
-        bg_lead_mining = 18
-        bg_logging = 2
-        bg_fishing = 5
+        bg_iron_mining = 36
+        bg_lead_mining = 27
+        bg_logging = 3
+        bg_fishing = 7
     }
     naval_exit_id = 3048
 }
@@ -404,7 +404,7 @@ STATE_LHASA = {
     arable_land = 100
     arable_resources = { "bg_rye_farms" "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 20
+        bg_logging = 30
     }
 }
 
@@ -420,7 +420,7 @@ STATE_NGARI = {
     arable_land = 60
     arable_resources = { "bg_livestock_ranches" }
     capped_resources = {
-        bg_logging = 11
+        bg_logging = 16
     }
 }
 
@@ -436,7 +436,7 @@ STATE_HIMALAYAS = {
     arable_land = 55
     arable_resources = { "bg_rice_farms" "bg_livestock_ranches" "bg_cotton_plantations" "bg_opium_plantations" "bg_tea_plantations" "bg_tobacco_plantations" }
     capped_resources = {
-        bg_logging = 9
+        bg_logging = 13
     }
 }
 
