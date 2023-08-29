@@ -4,6 +4,10 @@
 			country = c:CUB
 			type = puppet
 		}
+		create_diplomatic_pact = {
+			country = c:CEU
+			type = puppet
+		}
 
 	}
 	c:NET = {
@@ -158,42 +162,7 @@
 			type = dominion
 		}
 
-		### AUSTRALIA ###
-		# Colony of New South Wales
-		create_diplomatic_pact = {
-			country = c:NSW
-			type = dominion
-		}
-		# Colony of Western Australia
-		create_diplomatic_pact = {
-			country = c:WAS
-			type = dominion
-		}
-		# Colony of South Australia, established in February 1836
-		create_diplomatic_pact = {
-			country = c:SAS
-			type = dominion
-		}
-		# Colony of Tasmania, historically called Van Dieman's Land until 1856
-		create_diplomatic_pact = {
-			country = c:TAS
-			type = dominion
-		}
-		# United Tribes of New Zealand
-		create_diplomatic_pact = {
-			country = c:UNT
-			type = protectorate
-		}
-		# Kaurna
-		create_diplomatic_pact = {
-			country = c:KAU
-			type = protectorate
-		}
-		# Mosquito Kingdom
-		create_diplomatic_pact = {
-			country = c:MKT
-			type = protectorate
-		}
+
 		create_diplomatic_pact = {
 			country = c:KUT
 			type = puppet

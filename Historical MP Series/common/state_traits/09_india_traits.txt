@@ -66,6 +66,7 @@ state_trait_himalayas_mountains = {
 		state_infrastructure_mult = -0.25
 	}
 }
+
 state_trait_perpetual_hungry = {
 	icon = "gfx/interface/icons/state_trait_icons/unused/poor_soils.dds"
 	

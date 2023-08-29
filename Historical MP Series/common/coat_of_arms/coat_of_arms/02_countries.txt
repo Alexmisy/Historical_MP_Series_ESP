@@ -20414,6 +20414,41 @@ SPA_dictatorship = {
 		instance = { scale = { 0.37 0.37 } position = { 0.5 0.50 } } 
 	}
 }
+CEU = {
+	# Just the overall idea for now : Will look much better with the corrected eagle as supporter
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+	color2 = "blue"
+
+	colored_emblem = {
+		texture = "ce_cross_burgundy.dds"
+		color1 = color2
+		color2 = color2
+	}
+	colored_emblem = {
+		texture = "ce_circle.dds"
+		color1 = "yellow_dark"
+		color2 = "yellow_dark"
+		instance = { scale = { 0.28 0.28 } position = { 0.505 0.315 } }
+	}		
+	colored_emblem = {
+		texture = "ce_eagle.dds"
+		color1 = "black"
+		color2 = "yellow"
+		color3 = "white"
+		instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }
+	}		
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = "green"
+		color2 = "green"
+		instance = { scale = { 0.32 0.32 } position = { 0.5 0.55 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_spanish_republic.dds"
+		instance = { scale = { 0.37 0.37 } position = { 0.5 0.50 } } 
+	}
+}
 SPA_communist = {
 	pattern = "pattern_solid.tga"
 	color1 = "red"

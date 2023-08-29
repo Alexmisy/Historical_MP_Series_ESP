@@ -7,7 +7,7 @@
 base_values = {
 	country_weekly_innovation_add = 50
 	country_weekly_innovation_max_add = 50
-	country_tech_spread_add = 25
+	country_tech_spread_add = 7
 	
 	country_loan_interest_rate_add = 0.2
 	
@@ -18,13 +18,13 @@ base_values = {
 	country_influence_add = 100
 
 	country_secession_progress_add = 0.1
-
-	state_education_access_wealth_add = 0.005
+	
+	state_education_access_wealth_add = 0.01
 	
 	country_minting_add = 500
 
-	state_tax_capacity_add = 100
-	state_infrastructure_add = 3
+	state_tax_capacity_add = 75
+	state_infrastructure_add = 6
 	
 	state_poor_expected_sol = 5
 	state_middle_expected_sol = 10
@@ -42,7 +42,7 @@ base_values = {
 	
 	building_mobilization_cost_mult = 0.6
 	
-	building_economy_of_scale_level_cap_add = 20
+	building_economy_of_scale_level_cap_add = 15
 }
 
 character_base_values = {
@@ -189,17 +189,17 @@ tax_modifier_very_high = {
 government_wages_very_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	country_government_wages_mult = -0.3
-	interest_group_ig_intelligentsia_approval_add = -2
-	interest_group_ig_petty_bourgeoisie_approval_add = -2
-	country_prestige_mult = -0.2
+	interest_group_ig_intelligentsia_approval_add = -8
+	interest_group_ig_petty_bourgeoisie_approval_add = -5
+	state_construction_mult = -0.25
 }
 
 government_wages_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	country_government_wages_mult = -0.15
-	interest_group_ig_intelligentsia_approval_add = -1
-	interest_group_ig_petty_bourgeoisie_approval_add = -1
-	country_prestige_mult = -0.1
+	interest_group_ig_intelligentsia_approval_add = -4
+	interest_group_ig_petty_bourgeoisie_approval_add = -2.5
+	state_construction_mult = -0.125
 }
 
 government_wages_medium = {
@@ -208,33 +208,35 @@ government_wages_medium = {
 government_wages_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_government_wages_mult = 0.15
-	interest_group_ig_intelligentsia_approval_add = 1	
-	interest_group_ig_petty_bourgeoisie_approval_add = 1
-	country_authority_mult = 0.05
+	interest_group_ig_intelligentsia_approval_add = 1.5	
+	interest_group_ig_petty_bourgeoisie_approval_add = 1.5
+	country_authority_add = 100
 }
 
 government_wages_very_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_government_wages_mult = 0.3
-	interest_group_ig_intelligentsia_approval_add = 2
-	interest_group_ig_petty_bourgeoisie_approval_add = 2
-	country_authority_mult = 0.1
+	interest_group_ig_intelligentsia_approval_add = 3
+	interest_group_ig_petty_bourgeoisie_approval_add = 3
+	country_authority_add = 200
 }
 
 military_wages_very_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	country_military_wages_mult = -0.3
-	interest_group_ig_armed_forces_approval_add = -2	
+	interest_group_ig_armed_forces_approval_add = -8	
 	building_training_rate_mult = -0.75
-	country_army_power_projection_mult = -0.2
+	country_military_tech_spread_mult= -0.2
 }
+	
+
 
 military_wages_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	country_military_wages_mult = -0.15
-	interest_group_ig_armed_forces_approval_add = -1
+	interest_group_ig_armed_forces_approval_add = -4
 	building_training_rate_mult = -0.5
-	country_army_power_projection_mult = -0.1
+	country_military_tech_spread_mult= -0.1
 }
 
 military_wages_medium = {
@@ -243,16 +245,14 @@ military_wages_medium = {
 military_wages_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_military_wages_mult = 0.15
-	interest_group_ig_armed_forces_approval_add = 1
-	country_army_power_projection_mult = 0.1
+	interest_group_ig_armed_forces_approval_add = 2.5
 	unit_morale_recovery_mult = 0.1
 }
 
 military_wages_very_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_military_wages_mult = 0.3
-	interest_group_ig_armed_forces_approval_add = 2	
-	country_army_power_projection_mult = 0.2
+	interest_group_ig_armed_forces_approval_add = 5
 	unit_morale_recovery_mult = 0.2
 }
 
@@ -293,7 +293,8 @@ debug_ig_clout = {
 
 economy_of_scale = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	building_throughput_mult = 0.01
+	building_throughput_mult = 0.008
+	building_input_mult = -0.001
 }
 
 pm_retooling = {
@@ -333,7 +334,7 @@ insufficient_convoys = {
 # Excess BUR increases construction speed by +10% at 2x production to usage
 efficient_bureaucracy = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	state_construction_mult = 0.10
+	state_construction_mult = 0.20
 }
 
 # Insufficient BUR reduces tax collected by 100% at 2x usage to production
@@ -346,13 +347,14 @@ administrative_overburden = {
 legislative_efficiency = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_law_enactment_time_mult = -0.25
+	country_opposition_ig_approval_add = 5
 }
 
 # Insufficent AUT reduces opposition Interest Groups' Approval by -10 at 2x usage to production
 political_dysfunction = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_opposition_ig_approval_add = -10
-	state_radicals_from_sol_change_mult = 0.20
+	country_opposition_ig_approval_add = -20
+
 
 }
 
@@ -450,7 +452,6 @@ country_rivalry = {
 	country_influence_add = 200
 }
 
-# Infamy modifiers, applied from current infamy level
 infamy_reputable = {}
 
 infamy_infamous = {
@@ -459,10 +460,14 @@ infamy_infamous = {
 
 infamy_notorious = {
 	country_radicals_from_conquest_mult = 0.5
+	country_tech_spread_mult = -0.20
+	country_trade_route_competitiveness_mult = -0.4
 }
 
 infamy_pariah = {
 	country_radicals_from_conquest_mult = 1.0
+	country_tech_spread_mult = -0.50
+	country_trade_route_competitiveness_mult = -1
 }
 
 # Scales with devastation level
@@ -515,7 +520,7 @@ country_gdp = {
 country_literacy_rate = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
 	country_weekly_innovation_max_add = 150
-	country_tech_spread_add = 75
+	country_tech_spread_add = 75	
 }
 
 # Scales with number of excess innovation points
@@ -550,11 +555,22 @@ country_humiliated = {
 forced_market_opening = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	country_prestige_mult = -0.25
+	country_authority_mult = -0.60
+	interest_group_ig_armed_forces_approval_add = -10
+	interest_group_ig_devout_approval_add = -10
+	interest_group_ig_industrialists_approval_add = -10
+	interest_group_ig_intelligentsia_approval_add = -10
+	interest_group_ig_landowners_approval_add = -10
+	interest_group_ig_petty_bourgeoisie_approval_add = -10
+	interest_group_ig_rural_folk_approval_add = -10
+	interest_group_ig_trade_unions_approval_add = -10
 }
 
 forced_slavery_ban = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	country_prestige_mult = -0.25
+	country_authority_mult = -0.5
+	country_opposition_ig_approval_add = -5
 }
 
 modifier_tangena_ordeal = {
@@ -576,6 +592,8 @@ repudiated_obligation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	country_prestige_mult = -0.25
 	country_infamy_decay_mult = -0.25
+	country_loan_interest_rate_mult = 0.5
+	country_influence_mult = -0.5
 }
 
 supported_law_cancelled = {

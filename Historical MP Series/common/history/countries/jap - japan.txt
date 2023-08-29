@@ -37,7 +37,6 @@
 		}
 
 		ig:ig_devout = {
-			set_interest_group_name = ig_buddhist_monks
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_buddhist_moralist
 		}
@@ -47,8 +46,6 @@
 			add_ruling_interest_group = yes
 		}
 
-		ig:ig_rural_folk = {
-			set_interest_group_name = ig_peasants
-		}
+
 	}
 }

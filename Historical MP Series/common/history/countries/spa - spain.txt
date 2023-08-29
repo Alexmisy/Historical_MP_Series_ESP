@@ -41,14 +41,12 @@
 			add_ruling_interest_group = yes
 		}
 		
-		ig:ig_devout = { 
-			set_interest_group_name = ig_catholic_church 
-		}
-		
 		ig:ig_landowners = {
 			add_ideology = ideology_pious
 		}
-		
+		trigger_event = {
+			id = spanish_decadence.3
+		}
 
 		add_journal_entry = { 
 		
@@ -61,7 +59,7 @@
 		 
 		
 		type = je_carlist_issue
-			}
+		}
 		add_journal_entry = { 
 		
 		
@@ -102,11 +100,6 @@
 		}	
 		add_modifier = {	
 			name =spa_remembering_trafalgar
-		}
-		add_modifier = {	
-			name =second_reconquista
-			
-			years = 10
 		}
 	
 		

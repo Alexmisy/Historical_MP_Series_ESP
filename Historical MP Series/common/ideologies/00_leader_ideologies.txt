@@ -362,6 +362,22 @@ ideology_radical = {
 		law_technocracy = disapprove
 	}
 	
+	lawgroup_slavery = {
+		law_slavery_banned = approve
+		law_legacy_slavery = disapprove
+		law_debt_slavery = strongly_disapprove
+		law_slave_trade = strongly_disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_serfdom = strongly_disapprove
+		law_tenant_farmers = disapprove
+	}	
+	
+	lawgroup_debt = {
+		law_peonage = strongly_disapprove
+	}
+	
 	lawgroup_voting_system = {
 		law_no_voting = strongly_disapprove
 		law_plurality = disapprove
@@ -1579,7 +1595,7 @@ ideology_communist = {
 		law_wealth_voting = strongly_disapprove
 		law_landed_voting = strongly_disapprove
 		law_clerical_voting = strongly_disapprove
-		law_technocracy = neutral
+		law_technocracy = disapprove
 	}
 	
 	lawgroup_executive_structure = {
@@ -1736,7 +1752,7 @@ ideology_vanguardist = {
 
 	lawgroup_distribution_of_power = {
 		law_vanguardism = strongly_approve
-		law_oligarchy = approve
+		law_oligarchy = disapprove
 		law_autocracy = approve		
 		law_anarchy = disapprove
 		law_universal_suffrage = disapprove
@@ -1744,7 +1760,7 @@ ideology_vanguardist = {
 		law_wealth_voting = strongly_disapprove
 		law_landed_voting = strongly_disapprove
 		law_clerical_voting = strongly_disapprove
-		law_technocracy = neutral
+		law_technocracy = disapprove
 	}
 	
 	lawgroup_voting_system = {
@@ -1948,7 +1964,7 @@ ideology_fascist = {
 
 	lawgroup_distribution_of_power = {
 		law_vanguardism = strongly_approve
-		law_autocracy = strongly_approve
+		law_autocracy = approve
 		law_oligarchy = neutral
 		law_anarchy = strongly_disapprove
 		law_universal_suffrage = strongly_disapprove
@@ -1956,7 +1972,7 @@ ideology_fascist = {
 		law_wealth_voting = strongly_disapprove
 		law_landed_voting = strongly_disapprove		
 		law_clerical_voting = strongly_disapprove
-		law_technocracy = disapprove		
+		law_technocracy = strongly_approve		
 	}
 	
 	lawgroup_voting_system = {
@@ -2158,7 +2174,7 @@ ideology_anarchist = {
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove	
 		law_vanguardism = strongly_disapprove		
-		law_technocracy = disapprove
+		law_technocracy = strongly_disapprove
 	}
 	
 	lawgroup_voting_system = {
@@ -2883,9 +2899,9 @@ ideology_authoritarian = {
 		law_wealth_voting = disapprove
 		law_landed_voting = disapprove
 		law_clerical_voting = disapprove
-		law_technocracy = neutral
+		law_technocracy = approve
 		law_oligarchy = approve
-		law_autocracy = approve
+		law_autocracy = strongly_approve
 		law_vanguardism = approve
 	}
 
@@ -3413,9 +3429,15 @@ ideology_jacksonian_democrat = {
 		law_anarchy = strongly_disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
-		law_single_party_state = disapprove
 		law_technocracy = strongly_disapprove
 	}
+	
+	lawgroup_free_speech = {
+		law_outlawed_dissent = strongly_disapprove
+		law_censorship = disapprove
+		law_right_of_assembly = strongly_approve
+		law_protected_speech = neutral
+	}	
 
 	lawgroup_bureaucracy = {
 		law_elected_bureaucrats = approve

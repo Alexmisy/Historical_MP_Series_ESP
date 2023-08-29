@@ -68,10 +68,6 @@
 			add_ideology = ideology_southern_patriarchy
 		}
 
-		ig:ig_devout = {
-			set_interest_group_name = ig_evangelicals
-		}
-		
 		ig:ig_intelligentsia = {
 		remove_ideology = ideology_liberal
 		remove_ideology = ideology_republican

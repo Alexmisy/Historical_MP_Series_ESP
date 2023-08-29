@@ -348,6 +348,9 @@ heavenly.4 = {
 						}
 					}
 					ig:ig_devout = {
+						leader = {
+							set_ideology = ideology:ideology_theocrat
+						}
 						add_ruling_interest_group = yes
 					}
 				}
@@ -376,20 +379,6 @@ heavenly.4 = {
 					activate_law = law_type:law_peasant_levies
 				}
 				
-				if = {
-					limit = {
-						NOT = {
-							has_ruling_interest_group = ig_devout
-						}
-					}
-					ig:ig_devout = {
-						leader = {
-							set_ideology = ideology:ideology_theocrat
-						}
-						add_ruling_interest_group = yes
-					}
-				}
-				
 				ig:ig_landowners = { 
 					set_interest_group_name = ig_scholar_officials
 					remove_ideology = ideology:ideology_paternalistic
@@ -400,8 +389,8 @@ heavenly.4 = {
 				}
 				ig:ig_devout = {
 					set_interest_group_name = ig_taiping_god_worshippers
-					remove_ideology = ideology:ideology_moralist
-					add_ideology = ideology:ideology_heavenly_kingdom_theocratic
+					remove_ideology = ideology_moralist
+					add_ideology = ideology_heavenly_kingdom_theocratic
 					add_modifier = {
 						name = taiping_god_worshippers
 						months = very_long_modifier_time
@@ -433,6 +422,20 @@ heavenly.4 = {
 					name = taiping_conscription
 					months = 240
 					is_decaying = yes
+				}
+				
+				add_journal_entry = {
+					type = je_warlord_china
+				}
+				add_modifier = {
+					name = chinese_political_instability
+					is_decaying = no
+					years = -1
+				}
+				add_modifier = {
+					name = chinese_economic_stagnation
+					is_decaying = no
+					years = -1
 				}
 			}
 		}
@@ -592,8 +595,7 @@ heavenly.5 = {
 	option = { # mercy and pardons
 		name = heavenly.5.b
 		add_loyalists = {
-			value = 0.2
-			religion = rel:protestant
+			value = 0.05
 		}
 		every_country = {
 			limit = {

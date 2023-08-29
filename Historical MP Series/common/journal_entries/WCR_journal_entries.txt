@@ -65,7 +65,10 @@
     invalid = {
         hidden_trigger = {
             ROOT = {
-                WCR_is_westernized_trigger = yes
+				OR = {
+					WCR_is_westernized_trigger = yes
+					has_variable = abandoned_westernisation
+				}
             }
         }
     }
@@ -96,12 +99,18 @@
                 }
                 remove_modifier = WCR_ig_westernization_4_modifier
             }
+			if = {
+                limit = {
+                    has_variable = abandoned_westernisation
+                }
+                remove_variable = abandoned_westernisation
+            }
         }
     }
     
     status_desc = {
         first_valid = {
-            riggered_desc = {
+            triggered_desc = {
                 desc    = WCR_je_westernization_status_100
                 trigger = {
                     ROOT.var:WCR_westernization_progress >= 100

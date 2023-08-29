@@ -20,9 +20,9 @@ je_carlist_issue = {
 
 	}
 
+		
+
 	
-
-
 	transferable = no
 	should_be_pinned_by_default = yes
 	weight = 5000
@@ -46,10 +46,8 @@ je_economic_instability = {
 			has_law = law_type:law_per_capita_based_taxation
 		}
 
-		
-		
+				
 
-	
 
 	on_complete = {
 	
@@ -163,14 +161,11 @@ je_spanish_decadence = {
 		}
 		set_variable = je_spanish_decadence
 	}
-	fail = {
-		scope:journal_entry = {
-			is_goal_complete = yes
-		}
-	}
+
 
 	on_monthly_pulse = {
 		effect = {
+
 			if = {
 				limit = {
 					NOT = { has_variable = je_carlist_issue }

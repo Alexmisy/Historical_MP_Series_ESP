@@ -57,11 +57,12 @@
 	timeout = 9125
 
 	weight = 100
+	should_be_pinned_by_default = yes
 }
 
 je_reform_indies = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-
+	
 	is_shown_when_inactive = {
 		OR = {
 			AND = {
@@ -119,6 +120,7 @@ je_reform_indies = {
 	progressbar = yes
 
 	weight = 100
+	should_be_pinned_by_default = yes
 }
 
 je_ethical_policy = {

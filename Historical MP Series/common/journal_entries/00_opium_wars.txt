@@ -23,11 +23,11 @@
 	}
 
 	complete = {
-	
-		OR = {
-		this = c:GBR
+		scope:journal_entry = { is_goal_complete = yes }
+		custom_tooltip = {
+			text = opium_ban_tt
+			is_banning_goods = opium
 		}
-
 		is_at_war = no
 	}
 
@@ -80,11 +80,14 @@ je_opium_wars = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 
 	complete = {
-	
-			OR = {
-			this = c:GBR
+		any_scope_state = {
+			is_treaty_port = yes
+			state_region = {
+				any_scope_state = {
+					owner = scope:target
+				}
 			}
-
+		}
 	}
 
 	on_complete = {

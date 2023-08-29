@@ -439,8 +439,9 @@ je_embrace_ottomanism = {
 
 	on_complete = {
 		add_primary_culture = cu:mashriqi
+		add_primary_culture = cu:albanian
 		custom_tooltip = {
-			text = "Becomes The Ottoman Federation"
+			text = ottoman_fed_tt
 		}
 	}
 

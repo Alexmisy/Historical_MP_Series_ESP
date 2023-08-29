@@ -146,7 +146,7 @@ free_trade_party = {
 				}
 			}
 			add = {
-				value = 1
+				value = 10
 				desc = "from_powerful_capitalists"
 			}
 		}

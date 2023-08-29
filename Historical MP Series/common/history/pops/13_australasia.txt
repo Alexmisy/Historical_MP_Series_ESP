@@ -1,0 +1,121 @@
+﻿POPS = {
+	s:STATE_NEW_SOUTH_WALES = {
+		region_state:AST = {
+			create_pop = {
+				culture = australian
+				size = 63200
+			}
+			create_pop = {
+				culture = australian
+				size = 101384
+			}
+			create_pop = {
+				culture = australian
+				size = 16080
+			}
+		}
+	}
+	s:STATE_VICTORIA = {
+		region_state:AST = {
+			create_pop = {
+				culture = australian
+				size = 61118
+			}
+			create_pop = {
+				culture = australian
+				size = 44676
+			}
+		}
+	}
+
+	s:STATE_TASMANIA = {
+		region_state:AST = {
+			create_pop = {
+				culture = australian
+				size = 22208
+			}
+			create_pop = {
+				culture = australian
+				size = 11319
+			}
+		}
+	}
+	s:STATE_QUEENSLAND = {
+		region_state:AST = {
+			create_pop = {
+				culture = australian
+				size = 79200
+			}
+			create_pop = {
+				culture = australian
+				size = 4000
+			}
+		}
+	}
+	s:STATE_SOUTH_AUSTRALIA = {
+		region_state:AST = {
+			create_pop = {
+				culture = australian
+				size = 30500
+			}		
+			create_pop = {
+				culture = australian
+				size = 22000
+			}
+			create_pop = {
+				culture = australian
+				size = 300
+			}		
+			create_pop = {
+				culture = australian
+				size = 51000
+			}
+		}
+	}
+	s:STATE_WESTERN_AUSTRALIA = {
+		region_state:AST = {
+			create_pop = {
+				culture = australian
+				size = 88600 # Pops previously allocated to Noongar: 21100.
+			}
+			create_pop = {
+				culture = australian
+				size = 3004
+			}
+		}
+	}
+	s:STATE_NORTHERN_TERRITORY = {
+		region_state:AST = {
+			create_pop = {
+				culture = australian
+				size = 41804
+			}
+		}
+	}
+	s:STATE_NORTH_ISLAND = {
+		region_state:AST = {
+
+			create_pop = {
+				culture = australian
+				size = 102000
+			}
+		}
+	}
+	s:STATE_SOUTH_ISLAND = {
+		region_state:AST = {
+			create_pop = {
+				culture = australian
+				size = 428
+			}
+			create_pop = {
+				culture = australian
+				size = 12000
+			}
+
+			create_pop = {
+				culture = australian
+				size = 94000
+			}
+		}
+	}
+}

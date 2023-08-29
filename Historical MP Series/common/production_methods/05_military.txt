@@ -157,7 +157,7 @@ pm_squad_infantry = {
 
 		throughput_scaled = {
 			unit_offense_add = 55
-			unit_defense_add = 65
+			unit_defense_add = 55
 		}
 		
 		unscaled = {
@@ -200,7 +200,7 @@ pm_mechanized_infantry = {
 
 		throughput_scaled = {
 			unit_offense_add = 75
-			unit_defense_add = 75
+			unit_defense_add = 55
 		}
 
 		unscaled = {
@@ -306,8 +306,8 @@ pm_shrapnel_artillery = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 50
-			unit_defense_add = 15
+			unit_offense_add = 30
+			unit_defense_add = 25
 		}
 
 		unscaled = {
@@ -343,8 +343,8 @@ pm_siege_artillery = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 80
-			unit_defense_add = 15
+			unit_offense_add = 50
+			unit_defense_add = 30
 		}
 
 		unscaled = {
@@ -417,7 +417,7 @@ pm_motorized_recon = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 10
+			unit_offense_add = 15
 			unit_defense_add = 5
 		}
 
@@ -451,8 +451,8 @@ pm_aerial_recon = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 15
-			unit_defense_add = 10
+			unit_offense_add = 20
+			unit_defense_add = 5
 		}
 
 		unscaled = {
@@ -588,7 +588,7 @@ pm_chemical_weapons_specialists = {
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
-			unit_offense_add = 50
+			unit_offense_add = 20
 		}
 
 		unscaled = {
@@ -756,7 +756,7 @@ pm_squad_infantry_conscription = {
 
 		throughput_scaled = {
 			unit_offense_add = 55
-			unit_defense_add = 60
+			unit_defense_add = 55
 		}
 
 		unscaled = {
@@ -794,7 +794,7 @@ pm_mechanized_infantry_conscription = {
 
 		throughput_scaled = {
 			unit_offense_add = 75
-			unit_defense_add = 75
+			unit_defense_add = 55
 		}
 
 		unscaled = {
@@ -891,7 +891,7 @@ pm_shrapnel_artillery_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 50
+			unit_offense_add = 30
 			unit_defense_add = 15
 		}
 
@@ -923,8 +923,8 @@ pm_siege_artillery_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 80
-			unit_defense_add = 15
+			unit_offense_add = 50
+			unit_defense_add = 30
 		}
 
 		unscaled = {
@@ -940,7 +940,10 @@ pm_siege_artillery_conscription = {
 
 pm_cavalry_scouts_conscription = {
 	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
-
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment_minor
+	}
 }
 
 pm_bicycle_messengers_conscription = {
@@ -960,7 +963,7 @@ pm_bicycle_messengers_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_mult = 0.05
+			unit_offense_add = 5
 		}
 
 		unscaled = {
@@ -969,7 +972,7 @@ pm_bicycle_messengers_conscription = {
 		}
 	}
 	timed_modifiers = {
-		#pm_offense_defense_readjustment_minor
+		pm_offense_defense_readjustment_minor
 	}
 }
 
@@ -990,8 +993,8 @@ pm_motorized_recon_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_mult = 0.10
-			unit_defense_mult = 0.05
+			unit_offense_add = 15
+			unit_defense_add = 5
 		}
 
 		unscaled = {
@@ -999,7 +1002,7 @@ pm_motorized_recon_conscription = {
 		}
 	}
 	timed_modifiers = {
-		#pm_offense_defense_readjustment_minor
+		pm_offense_defense_readjustment_minor
 	}
 }
 
@@ -1019,8 +1022,8 @@ pm_aerial_recon_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_mult = 0.15
-			unit_defense_mult = 0.10
+			unit_offense_add = 20
+			unit_defense_add = 5
 		}
 
 		unscaled = {
@@ -1029,7 +1032,7 @@ pm_aerial_recon_conscription = {
 		}
 	}
 	timed_modifiers = {
-		#pm_offense_defense_readjustment_minor
+		pm_offense_defense_readjustment_minor
 	}
 }
 
@@ -1053,7 +1056,7 @@ pm_machine_gunners_conscription = {
 			building_input_ammunition_add = 1
 		}
 		throughput_scaled = {
-			unit_defense_add = 25
+			unit_defense_add = 20
 		}
 
 		unscaled = {
@@ -1139,7 +1142,7 @@ pm_chemical_weapons_specialists_conscription = {
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
-			unit_offense_add = 50
+			unit_offense_add = 20
 		}
 
 		unscaled = {
@@ -1164,6 +1167,9 @@ pm_wound_dressing = {
 			unit_recovery_rate_add = 0.25
 		}
 	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment_organisation
+	}
 }
 
 pm_first_aid = {
@@ -1181,6 +1187,9 @@ pm_first_aid = {
 			unit_morale_loss_mult = -0.25
 			unit_recovery_rate_add = 0.50
 		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment_organisation
 	}
 }
 
@@ -1201,6 +1210,9 @@ pm_field_hospitals = {
 			unit_morale_loss_mult = -0.5
 			unit_recovery_rate_add = 0.75
 		}
+	}
+	timed_modifiers = {
+		pm_offense_defense_readjustment_organisation
 	}
 }
 
@@ -1426,7 +1438,7 @@ pm_commerce_raider = {
 	}
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 }
 
@@ -1456,7 +1468,7 @@ pm_torpedo_boat = {
 	}
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 }
 
@@ -1487,7 +1499,7 @@ pm_submarine = {
 	}
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment
+		pm_offense_defense_readjustment_minor
 	}
 }
 
@@ -1527,13 +1539,15 @@ pm_destroyers = {
 
 		throughput_scaled = {
 			# switched until Paradox fixes
-			unit_offense_add = 20
-			unit_defense_add = 10
+			unit_offense_add =10
+			unit_defense_add = 5
 		}
 
 		unscaled = {
 			unit_morale_loss_mult = -0.1
 #			todo: unit_convoy_defence_mult = 0.25
+			unit_convoy_raiding_interception_mult = 0.25
+			unit_convoy_defense_mult = 0.5
 		}
 	}
 
@@ -1563,14 +1577,16 @@ pm_carriers = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 40	#30
-			unit_defense_add = 30 	#40
+			unit_offense_add = 30	#20
+			unit_defense_add = 20 	#30
 		}
 
 		unscaled = {
 			building_training_rate_add = -10
 			unit_morale_loss_mult = -0.25
 #			todo: unit_convoy_defence_mult = 0.25
+			unit_convoy_raiding_interception_mult = 0.5
+			unit_convoy_defense_mult = 0.5
 		}
 	}
 
@@ -1592,7 +1608,10 @@ pm_no_naval_theory = {
 			building_training_rate_add = 3
 		}
 	}
-
+	
+	timed_modifiers = {
+		pm_offense_defense_readjustment_organisation
+	}
 }
 
 pm_power_of_the_purse = {
@@ -1619,7 +1638,7 @@ pm_power_of_the_purse = {
 	}
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment_minor
+		pm_offense_defense_readjustment_organisation
 	}
 }
 
@@ -1647,7 +1666,7 @@ pm_jeune_ecole = {
 	}
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment_minor
+		pm_offense_defense_readjustment_organisation
 	}
 }
 
@@ -1675,7 +1694,7 @@ pm_sea_lane_strategies = {
 	}
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment_minor
+		pm_offense_defense_readjustment_organisation
 	}
 }
 
@@ -1703,6 +1722,6 @@ pm_battlefleet_tactics = {
 	}
 
 	timed_modifiers = {
-		pm_offense_defense_readjustment_minor
+		pm_offense_defense_readjustment_organisation
 	}
 }

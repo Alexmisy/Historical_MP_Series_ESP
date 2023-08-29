@@ -6,17 +6,24 @@
 	female_ruler = "RULER_TITLE_GOVERNOR_GENERAL"
 	
 	possible = {
-		has_law = law_type:law_independent_executive
-		AND = { exists = c:GBR is_subject_of = c:GBR }
-		OR = {
-			AND = { exists = c:HBC c:HBC = ROOT }
-			AND = { exists = c:BIC c:BIC = ROOT }
-		}
+		has_law = law_type:law_industry_banned
 		is_subject_type = subject_type_dominion
+		top_overlord = {
+			any_primary_culture = {
+				has_discrimination_trait = european_heritage
+			}
+		}
+		any_primary_culture = {
+			has_discrimination_trait = european_heritage
+		}
 	}
 	
 	on_government_type_change = {
 		change_to_presidential_elective = yes
+	}
+	
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
 	}
 }
 
@@ -29,6 +36,10 @@ gov_colonial_administration = {
 	
 	possible = {
 		OR = {
+			NOT = { has_law = law_type:law_industry_banned }
+			is_subject_type = subject_type_puppet
+		}
+		OR = {
 			is_subject_type = subject_type_dominion
 			is_subject_type = subject_type_puppet
 		}
@@ -40,11 +51,14 @@ gov_colonial_administration = {
 		any_primary_culture = {
 			has_discrimination_trait = european_heritage
 		}
-		country_is_in_europe = no
 	}
 	
 	on_government_type_change = {
 		change_to_presidential_elective = yes
+	}
+	
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
 	}
 }
 
@@ -64,10 +78,21 @@ gov_dictatorship = {
 			country_has_voting_franchise = no
 			has_law = law_type:law_vanguardism
 		}
+		NOT = { has_law = law_type:law_command_economy }
+		NOT = {
+			AND = {
+				has_law = law_type:law_industry_banned
+				is_subject_type = subject_type_puppet
+			}
+		}
 	}
 	
 	on_government_type_change = {
 		change_to_dictatorial = yes
+	}
+	
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
 	}
 }
 
@@ -86,6 +111,10 @@ gov_presidential_oligarchy = {
 	
 	on_government_type_change = {
 		change_to_dictatorial = yes
+	}
+	
+	on_post_government_type_change = {
+		post_change_to_dictatorial = yes
 	}
 }
 
@@ -107,6 +136,10 @@ gov_presidential_democracy_aristocratic = {
 	on_government_type_change = {
 		change_to_presidential_elective = yes
 	}
+	
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
 }
 
 gov_presidential_democracy_unitary = {
@@ -127,6 +160,10 @@ gov_presidential_democracy_unitary = {
 	on_government_type_change = {
 		change_to_presidential_elective = yes
 	}
+	
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
 }
 
 gov_presidential_democracy_federal = {
@@ -146,5 +183,9 @@ gov_presidential_democracy_federal = {
 	
 	on_government_type_change = {
 		change_to_presidential_elective = yes
+	}
+	
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
 	}
 }

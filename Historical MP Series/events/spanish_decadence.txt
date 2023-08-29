@@ -74,3 +74,67 @@ spanish_decadence.2 = {
 	}
 
 }
+spanish_decadence.3 = { 
+	type = country_event
+	
+
+	title = reconquest_or_reconstrucction.1.t
+	desc = reconquest_or_reconstrucction.1.d
+	flavor = reconquest_or_reconstrucction.1.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 6
+
+	immediate = {
+		random_country = {
+			limit = {this = c:UCA}
+			save_scope_as = UCA_country
+		}
+	}		
+	trigger = {
+
+	}
+
+	option = { #starts JE
+
+		name = reconquest.1.a
+
+		default_option = no
+
+		add_modifier = {
+
+			name = second_reconquista	
+			years = 10
+		
+		}	
+		
+		
+		annex = scope:UCA_country
+		
+
+		
+
+	}
+	option = { #starts JE
+
+		name = reconstrucction.1.b
+
+		default_option = yes
+
+		add_modifier = {
+
+			name = reconstruccion_nacional	
+			years = 10
+
+		}	
+
+	}
+
+}

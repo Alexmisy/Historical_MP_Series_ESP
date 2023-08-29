@@ -428,37 +428,37 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 832996
+				size =  1041245
 			}
 			create_pop = {
 				culture = greek
-				size = 281992
+				size =  352490
 			}
 			create_pop = {
 				culture = north_italian
-				size = 7996
+				size =  9995
 			}
 			create_pop = {
 				culture = bulgarian
-				size = 80004
+				size =  100005
 			}
 			create_pop = {
 				culture = armenian
-				size = 67996
+				size =  84995
 			}
 			create_pop = {
 				culture = sephardic
-				size = 50004
+				size =  62505
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = north_caucasian
-				size = 6000
+				size =  7500
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = lacustrine_bantu
-				size = 16000
+				size =  20000
 			}
 		}
 	}
@@ -466,23 +466,23 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 61604
+				size =  77005
 			}
 			create_pop = {
 				culture = ukrainian
-				size = 12000
+				size =  15000
 			}
 			create_pop = {
 				culture = bulgarian
-				size = 92004
+				size =  115005
 			}
 			create_pop = {
 				culture = greek
-				size = 4000
+				size =  5000
 			}
 			create_pop = {
 				culture = romanian
-				size = 84000
+				size =  105000
 			}
 		}
 	}
@@ -490,21 +490,21 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = albanian
-				size = 1004808
+				size =  1256010
 			}
 			create_pop = {
 				culture = greek
-				size = 40000
+				size =  50000
 			}
 			create_pop = {
 				culture = albanian
 				religion = catholic
-				size = 127200
+				size =  159000
 			}
 			create_pop = {
 				culture = albanian
 				religion = orthodox
-				size = 91200
+				size =  114000
 			}
 		}
 	}
@@ -512,19 +512,19 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = bosniak
-				size = 304908
+				size =  381135
 			}
 			create_pop = {
 				culture = sephardic
-				size = 3196
+				size =  3995
 			}
 			create_pop = {
 				culture = serb
-				size = 372400
+				size =  465500
 			}
 			create_pop = {
 				culture = croat
-				size = 183996
+				size =  229995
 			}
 		}
 	}
@@ -532,24 +532,24 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 273408
+				size =  341760
 			}
 			create_pop = {
 				culture = bulgarian
-				size = 497600
+				size =  622000
 			}
 			create_pop = {
 				culture = greek
-				size = 40004
+				size =  50005
 			}
 			create_pop = {
 				culture = bulgarian
 				religion = sunni
-				size = 35600
+				size =  44500
 			}
 			create_pop = {
 				culture = sephardic
-				size = 6996
+				size =  8745
 			}
 		}
 	}
@@ -557,15 +557,15 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 210404
+				size =  263005
 			}
 			create_pop = {
 				culture = bulgarian
-				size = 660000
+				size =  825000
 			}
 			create_pop = {
 				culture = sephardic
-				size = 4004
+				size =  5005
 			}
 		}
 	}
@@ -715,7 +715,7 @@
 		region_state:SER = {
 			create_pop = {
 				culture = serb
-				size = 809604
+				size =  1012005
 			}
 		}
 	}
@@ -723,27 +723,27 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 124400
+				size =  155500
 			}
 			create_pop = {
 				culture = bosniak
-				size = 22396
+				size =  27995
 			}
 			create_pop = {
 				culture = serb
-				size = 581800
+				size =  727250
 			}
 			create_pop = {
 				culture = greek
-				size = 8000
+				size =  10000
 			}
 			create_pop = {
 				culture = albanian
-				size = 192596
+				size =  240745
 			}
 			create_pop = {
 				culture = bulgarian
-				size = 49404
+				size =  61755
 			}
 		}
 	}
@@ -751,11 +751,11 @@
 		region_state:EGY = {
 			create_pop = {
 				culture = turkish
-				size = 59992
+				size =  74990
 			}
 			create_pop = {
 				culture = greek
-				size = 80000
+				size =  100000
 			}
 		}
 	}
@@ -763,7 +763,7 @@
 		region_state:GRE = {
 			create_pop = {
 				culture = greek
-				size = 80404
+				size =  100505
 			}
 		}
 	}
@@ -772,15 +772,15 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 8992
+				size =  11240
 			}
 			create_pop = {
 				culture = sephardic
-				size = 1996
+				size =  2495
 			}
 			create_pop = {
 				culture = greek
-				size = 82996
+				size =  103745
 			}
 		}
 	}
@@ -788,7 +788,7 @@
 		region_state:GRE = {
 			create_pop = {
 				culture = greek
-				size = 637592
+				size =  796990
 			}
 		}
 	}
@@ -796,24 +796,24 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 76208
+				size =  95260
 			}
 			create_pop = {
 				culture = albanian
-				size = 12000
+				size =  15000
 			}
 			create_pop = {
 				culture = greek
-				size = 935900
+				size =  1169875
 			}
 			create_pop = {
 				culture = sephardic
-				size = 3796
+				size =  4745
 			}
 			create_pop = {
 				culture = albanian
 				religion = orthodox
-				size = 104000
+				size =  130000
 			}
 		}
 	}
@@ -821,23 +821,23 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 157296
+				size =  196620
 			}
 			create_pop = {
 				culture = sephardic
-				size = 7996
+				size =  9995
 			}
 			create_pop = {
 				culture = bulgarian
-				size = 384000
+				size =  480000
 			}
 			create_pop = {
 				culture = greek
-				size = 92000
+				size =  115000
 			}
 			create_pop = {
 				culture = albanian
-				size = 95600
+				size =  119500
 			}
 		}
 	}
@@ -845,29 +845,29 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 84000
+				size =  105000
 			}
 			create_pop = {
 				culture = greek
-				size = 276000
+				size =  345000
 			}
 			create_pop = {
 				culture = bulgarian
-				size = 28000
+				size =  35000
 			}
 			create_pop = {
 				culture = sephardic
-				size = 57204
+				size =  71505
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = north_caucasian
-				size = 200
+				size =  250
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = lacustrine_bantu
-				size = 700
+				size =  875
 			}
 		}
 	}
@@ -875,25 +875,25 @@
 		region_state:TUR = {
 			create_pop = {
 				culture = turkish
-				size = 274808
+				size =  343510
 			}
 			create_pop = {
 				culture = greek
-				size = 376000
+				size =  470000
 			}
 			create_pop = {
 				culture = bulgarian
-				size = 80000
+				size =  100000
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = north_caucasian
-				size = 300
+				size =  375
 			}
 			create_pop = {
 				pop_type = slaves
 				culture = lacustrine_bantu
-				size = 1500
+				size =  1875
 			}
 
 		}
@@ -902,15 +902,15 @@
 		region_state:ION = {
 			create_pop = {
 				culture = greek
-				size = 186404
+				size =  233005
 			}
 			create_pop = {
 				culture = british
-				size = 16
+				size =  20
 			}
 			create_pop = {
 				culture = sephardic
-				size = 2000
+				size =  2500
 			}
 		}
 	}
@@ -918,7 +918,7 @@
 		region_state:GRE = {
 			create_pop = {
 				culture = greek
-				size = 221996
+				size =  277495
 			}
 		}
 	}

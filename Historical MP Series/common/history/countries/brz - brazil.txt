@@ -34,8 +34,13 @@
 			add_ruling_interest_group = yes
 		}
 
-		ig:ig_devout = {
-			set_interest_group_name = ig_catholic_church
+		add_journal_entry = { 	
+			
+			type = brazil_slavery
+		}
+		add_modifier = {
+		
+			name = brazil_workforce
 		}
 	}
 }

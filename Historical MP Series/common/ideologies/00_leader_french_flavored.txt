@@ -27,7 +27,7 @@
 		law_universal_suffrage = disapprove
 		law_anarchy = strongly_disapprove
 		law_vanguardism = strongly_disapprove
-		law_technocracy = strongly_disapprove
+		law_technocracy = approve
 	}
 
 	lawgroup_economic_system = {	
@@ -197,7 +197,6 @@ ideology_legitimist = {
 		law_autocracy = strongly_approve
 		law_oligarchy = neutral
 		law_clerical_voting = strongly_disapprove
-		law_single_party_state = disapprove
 		law_landed_voting = strongly_disapprove	
 		law_wealth_voting = strongly_disapprove	
 		law_census_voting = strongly_disapprove		
@@ -341,12 +340,11 @@ ideology_bonapartist = {
 		law_landed_voting = neutral	
 		law_clerical_voting = strongly_disapprove
 		law_wealth_voting = neutral	
-		law_single_party_state = neutral
 		law_census_voting = disapprove		
 		law_universal_suffrage = disapprove
 		law_anarchy = strongly_disapprove
 		law_vanguardism = strongly_disapprove
-		law_technocracy = strongly_disapprove
+		law_technocracy = approve
 	}
 
 	lawgroup_army_model = {
