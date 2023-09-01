@@ -293,6 +293,7 @@ restauracion_meiji = {
 	country_weekly_innovation_mult = 1
 	country_weekly_innovation_max_add = 75	
 	country_tech_spread_mult = 1
+	country_law_enactment_time_mult = -0.20
 			
 }
 reconstruccion_nacional = {

@@ -7077,7 +7077,9 @@ STATES = {
 		}
 		
 		add_homeland = south_andean
-		add_homeland = aimara		
+		add_homeland = aimara	
+		add_claim = c:SPA
+		add_claim = c:IBE		
 	}
 	s:STATE_ANTOFAGASTA = {
 		create_state = {
