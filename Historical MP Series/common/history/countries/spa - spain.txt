@@ -64,7 +64,7 @@
 		
 		
 		
-		type = je_economic_instability
+		type = je_lacking_industrialization
 		}
 		
 		add_journal_entry = { 
@@ -90,7 +90,7 @@
 			name =spa_carlist_issue
 		}	
 		add_modifier = {
-			name =spa_economic_instability
+			name =spa_lacking_industrialization
 		}	
 		add_modifier = {	
 			name =spa_incompetent_army

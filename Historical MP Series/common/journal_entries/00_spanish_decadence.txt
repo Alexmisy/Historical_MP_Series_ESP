@@ -28,13 +28,13 @@ je_carlist_issue = {
 	weight = 5000
 }
 
-je_economic_instability = {
+je_lacking_industrialization = {
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
 
 	complete = {
 		
 		
-			investment_pool_gross_income > 25000
+			investment_pool_gross_income > 20000
 		
 
 			pop_type_percent_country = {
@@ -52,7 +52,7 @@ je_economic_instability = {
 	on_complete = {
 	
 		set_variable = je_economic_instability
-		remove_modifier = spa_economic_instability
+		remove_modifier = spa_lacking_industrialization	
 		
 	}
 
@@ -125,7 +125,7 @@ je_remembering_trafalgar = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
 	complete = {
-		navy_size >= 80
+		navy_size >= 120
 	}
 
 	on_complete = {
@@ -778,7 +778,7 @@ je_spanish_decadence = {
 	}
 	
 	goal_add_value = {
-		value = 700
+		value = 1000
 	}
 
 

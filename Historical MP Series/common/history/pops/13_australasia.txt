@@ -3,7 +3,7 @@
 		region_state:AST = {
 			create_pop = {
 				culture = australian
-				size = 63200
+				size = 103200
 			}
 			create_pop = {
 				culture = australian
@@ -19,7 +19,7 @@
 		region_state:AST = {
 			create_pop = {
 				culture = australian
-				size = 61118
+				size = 101118
 			}
 			create_pop = {
 				culture = australian
@@ -32,7 +32,7 @@
 		region_state:AST = {
 			create_pop = {
 				culture = australian
-				size = 22208
+				size = 32208
 			}
 			create_pop = {
 				culture = australian
@@ -44,7 +44,7 @@
 		region_state:AST = {
 			create_pop = {
 				culture = australian
-				size = 79200
+				size = 119200
 			}
 			create_pop = {
 				culture = australian
@@ -56,7 +56,7 @@
 		region_state:AST = {
 			create_pop = {
 				culture = australian
-				size = 30500
+				size = 40500
 			}		
 			create_pop = {
 				culture = australian
@@ -76,7 +76,7 @@
 		region_state:AST = {
 			create_pop = {
 				culture = australian
-				size = 88600 # Pops previously allocated to Noongar: 21100.
+				size = 108600 # Pops previously allocated to Noongar: 21100.
 			}
 			create_pop = {
 				culture = australian
@@ -88,7 +88,7 @@
 		region_state:AST = {
 			create_pop = {
 				culture = australian
-				size = 41804
+				size = 67804
 			}
 		}
 	}
@@ -97,7 +97,7 @@
 
 			create_pop = {
 				culture = australian
-				size = 102000
+				size = 162000
 			}
 		}
 	}
@@ -109,7 +109,7 @@
 			}
 			create_pop = {
 				culture = australian
-				size = 12000
+				size = 62000
 			}
 
 			create_pop = {

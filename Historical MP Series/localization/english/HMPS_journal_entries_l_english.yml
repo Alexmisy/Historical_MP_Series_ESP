@@ -94,8 +94,8 @@
  austria_will_kill_you_tt:0 "A war with Austria is likely to break out immediately."
  
  
-  je_carlist_issue:0 "Carlist Issue"
- je_economic_instability:0 "Economic Instability"
+je_carlist_issue:0 "Carlist Issue"
+je_lacking_industrialization:0 "Lacking Industrialization"
 je_incompetent_army:0 "Incompetent Army"
 je_illiterate_problem:0 "Illiterate Problem"
 je_remembering_trafalgar:0 "Remembering Trafalgar"

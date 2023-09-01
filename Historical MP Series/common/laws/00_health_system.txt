@@ -79,7 +79,7 @@ law_private_health_insurance = {
 	institution = institution_health_system
 	institution_modifier = {
 		#country_bureaucracy_mult = -0.02
-		state_mortality_wealth_mult = -0.0025
+		state_mortality_wealth_mult = -0.0021
 	}
 	
 	pop_support = {

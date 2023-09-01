@@ -47,7 +47,7 @@
  modifier_building_explosives_industry_throughput_mult:0 "$building_explosives_industry$ building [concept_throughput]"
  modifier_building_explosives_industry_throughput_mult_desc:0 "A bonus or penalty to both input and output of $building_explosives_industry$"
   spa_carlist_issue:0 "Carlist Issue"
-    spa_economic_instability:0 "Economic Instability"
+    spa_lacking_industrialization:0 "Lacking industrialization"
     spa_incompetent_army:0 "Incompetent Army"
     spa_illiterate_problem:0 "Illiterate Problem"
     spa_remembering_trafalgar:0 "Remembering Trafalgar"

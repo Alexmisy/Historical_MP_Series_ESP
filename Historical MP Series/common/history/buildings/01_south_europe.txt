@@ -911,12 +911,7 @@
 				reserves=1
 				activate_production_methods={ "pm_muskets" "pm_merchant_guilds_building_arms_industry" }
 			}
-			create_building={
-				building="building_artillery_industry"
-				level=3
-				reserves=1
-				activate_production_methods={ "pm_cannons" }
-			}
+			
 			create_building={
 				building="building_wheat_farm"
 				level=6
@@ -975,13 +970,19 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 			}
+			create_building={
+				building="building_tooling_workshops"
+				level=5
+				reserves=1
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" "pm_privately_owned_building_tooling_workshops" }
+			}
 		}
 	}
 	s:STATE_ASTURIAS={
 		region_state:SPA={
 			create_building={
 				building="building_naval_base"
-				level=5
+				level=10
 				reserves=1
 				activate_production_methods={ "pm_man_o_wars" "pm_frigates" "pm_commerce_raider" "pm_no_naval_theory" }
 			}
@@ -1079,7 +1080,7 @@
 			}
 			create_building={
 				building="building_iron_mine"
-				level=3
+				level=10
 				reserves=1
 				activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_merchant_guilds_building_iron_mine" }
 			}
@@ -1151,6 +1152,7 @@
 	}
 	s:STATE_CATALONIA={
 		region_state:SPA={
+			
 			create_building={
 				building="building_government_administration"
 				level=3
@@ -1275,7 +1277,7 @@
 			}
 			create_building={
 				building="building_naval_base"
-				level=5
+				level=10
 				reserves=1
 				activate_production_methods={ "pm_man_o_wars" "pm_frigates" "pm_commerce_raider" "pm_no_naval_theory" }
 			}
@@ -1290,8 +1292,14 @@
 	s:STATE_GRANADA={
 		region_state:SPA={
 			create_building={
+				building="building_artillery_industry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_cannons" }
+			}
+			create_building={
 				building="building_military_shipyards"
-				level=2
+				level=3
 				reserves=1
 				activate_production_methods={ "pm_military_shipbuilding_wooden_2" "pm_merchant_guilds_building_military_shipyards" }
 			}
@@ -1325,6 +1333,12 @@
 				reserves=1
 				activate_production_methods={ "pm_line_infantry" "pm_cannon_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_wound_dressing" }
 			}
+			create_building={
+				building="building_naval_base"
+				level=10
+				reserves=1
+				activate_production_methods={ "pm_man_o_wars" "pm_frigates" "pm_commerce_raider" "pm_no_naval_theory" }
+			}
 		}
 		region_state:GBR={
 			create_building={
@@ -1343,6 +1357,12 @@
 	}
 	s:STATE_BADAJOZ={
 		region_state:SPA={
+			create_building={
+				building="building_logging_camp"
+				level=3
+				reserves=1
+				activate_production_methods={ "pm_simple_forestry"  "pm_no_equipment" "pm_road_carts" "pm_merchant_guilds_building_logging_camp" }
+			}
 			create_building={
 				building="building_livestock_ranch"
 				level=5
@@ -1413,6 +1433,7 @@
 				reserves=1
 				activate_production_methods={ "pm_basic_port" }
 			}
+			
 		}
 	}
 	s:STATE_BEIRA={

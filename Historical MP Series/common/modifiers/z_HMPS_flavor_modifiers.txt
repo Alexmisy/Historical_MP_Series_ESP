@@ -228,15 +228,17 @@ Australian_Melody = {
 }
 spa_carlist_issue = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	interest_group_ig_landowners_approval_add = -5
-	interest_group_ig_devout_approval_add = -5
 	interest_group_ig_landowners_pol_str_mult = 0.25
 	interest_group_ig_devout_pol_str_mult = 0.25
 }
-spa_economic_instability = {
+spa_lacking_industrialization = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	building_throughput_mult = -0.25
-	building_barracks_throughput_mult = 0.25	
+	
+	state_aristocrats_investment_pool_efficiency_mult= -0.5
+	state_capitalists_investment_pool_efficiency_mult = -0.5
+
+	
+	
 }
 spa_incompetent_army = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
@@ -248,7 +250,7 @@ spa_incompetent_army = {
 spa_illiterate_problem = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	country_tech_spread_mult = -0.2	
-	state_education_access_add = -0.1
+	state_pop_qualifications_mult = -0.15
 }
 spa_remembering_trafalgar = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_explosion_negative.dds
@@ -260,10 +262,10 @@ spa_spanish_decadence = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
 	country_prestige_mult= -0.25
 	interest_group_approval_add = -5
-	country_loan_interest_rate_mult = 0.15
-	country_bureaucracy_mult = -0.25
+	country_loan_interest_rate_mult = 0.1
+	country_bureaucracy_mult = -0.20
 	country_government_wages_mult = 0.25
-	state_education_access_add= -0.15
+	state_education_access_add= -0.10
 }
 spa_plus_ultra = {
 	icon = gfx/interface/icons/production_method_icons/unused/propaganda_posters.dds
@@ -280,7 +282,8 @@ second_reconquista = {
 	building_arms_industry_throughput_mult = 1	
 	building_artillery_industry_throughput_mult = 1	
 	state_conscription_rate_add	= 0.04
-	country_diplomatic_play_maneuvers_add = 180
+	country_diplomatic_play_maneuvers_add = 200
+	country_military_goods_cost_mult = -0.5
 			
 }
 restauracion_meiji = {
@@ -295,12 +298,10 @@ restauracion_meiji = {
 reconstruccion_nacional = {
 	icon = gfx/interface/icons/achievements/grander_colombia.dds
 	
-	country_construction_add = 35
-	country_production_weekly_innovation_mult = 0.5
-	country_society_weekly_innovation_mult	= 0.5
-	country_military_weekly_innovation_mult = 0.5
-	country_legitimacy_base_add = 10
-	country_law_enactment_time_mult = -0.25
+	country_construction_add = 80
+	country_tech_spread_mult = 0.5
+	country_legitimacy_base_add = 15
+	country_law_enactment_time_mult = -0.33
 	country_law_enactment_success_add = 0.1
 }
 brazil_workforce = {
